@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 100 320 400" preserveAspectRatio="xMidYMax slice">
+<style>
+  .toon-head{transform-box:view-box;transform-origin:200px 340px;animation:sway 6s ease-in-out infinite}
+  .toon-body{transform-box:view-box;transform-origin:200px 500px;animation:breathe 6s ease-in-out infinite}
+  .eyes{transform-box:fill-box;transform-origin:center;animation:squint 7s ease-in-out infinite}
+  @keyframes sway{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.8deg) translateY(-1px)}}
+  @keyframes breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.008)}}
+  @keyframes squint{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.4)}}
+  @media (prefers-reduced-motion:reduce){.toon-head,.toon-body,.eyes{animation:none}}
+</style>
+  <g class="toon-body">
+    <!-- hair behind -->
+    <path fill="#2a211e" d="M128 190 C112 250 104 320 100 380 C98 420 104 450 118 470 L282 470 C296 450 302 420 300 380 C296 320 288 250 272 190 Z"/>
+    <!-- shirt -->
+    <path fill="#cdd3d1" d="M40 500 C44 430 80 392 150 372 L250 372 C320 392 356 430 360 500 Z"/>
+    <path fill="#bcc3c1" d="M150 372 L250 372 C236 392 220 402 200 404 C180 402 164 392 150 372 Z"/>
+    <!-- neck -->
+    <path fill="#eebf9f" d="M178 318 L222 318 L224 372 C212 386 188 386 176 372 Z"/>
+    <path fill="#e3ad8c" d="M178 330 C190 342 210 342 222 330 L222 346 C210 354 190 354 178 346 Z"/>
+    <!-- henley placket -->
+    <path fill="#f4f6f5" d="M186 380 C194 386 206 386 214 380 L212 440 L188 440 Z"/>
+    <line x1="200" y1="388" x2="200" y2="440" stroke="#aab2b0" stroke-width="2"/>
+    <g fill="#8e9795"><circle cx="200" cy="400" r="3.2"/><circle cx="200" cy="416" r="3.2"/><circle cx="200" cy="432" r="3.2"/></g>
+    <!-- front hair strands over the shoulders -->
+    <path fill="#2f2521" d="M132 250 C124 320 118 380 112 440 C110 460 120 478 136 486 C150 440 156 380 158 300 Z"/>
+    <path fill="#2f2521" d="M268 250 C276 320 284 380 290 440 C292 462 282 478 266 486 C250 440 244 380 242 300 Z"/>
+    <path fill="none" stroke="#4a3a33" stroke-width="2" stroke-linecap="round" opacity=".7" d="M140 300 C136 360 132 420 128 470 M262 300 C266 360 270 420 274 470"/>
+  </g>
+  <g class="toon-head">
+    <!-- face -->
+    <ellipse cx="200" cy="252" rx="60" ry="72" fill="#f4cdb0"/>
+    <!-- side hair framing the face -->
+    <path fill="#2a211e" d="M140 196 C132 240 134 280 146 312 C150 270 154 236 164 206 Z"/>
+    <path fill="#2a211e" d="M260 196 C268 240 266 280 254 312 C250 270 246 236 236 206 Z"/>
+    <!-- brows -->
+    <g fill="none" stroke="#3a2c26" stroke-width="3.2" stroke-linecap="round">
+      <path d="M160 222 C168 216 178 216 186 220"/><path d="M214 220 C222 216 232 216 240 222"/>
+    </g>
+    <!-- happy eyes -->
+    <g class="eyes" fill="none" stroke="#2a211e" stroke-width="4.2" stroke-linecap="round">
+      <path d="M162 246 C168 236 180 236 186 246"/><path d="M214 246 C220 236 232 236 238 246"/>
+    </g>
+    <!-- blush -->
+    <g fill="#ef9f95" opacity=".45"><ellipse cx="158" cy="272" rx="13" ry="8"/><ellipse cx="242" cy="272" rx="13" ry="8"/></g>
+    <!-- nose -->
+    <path d="M198 256 C194 266 196 272 204 272" fill="none" stroke="#d99f80" stroke-width="3" stroke-linecap="round"/>
+    <!-- smile -->
+    <path fill="#7a3634" d="M172 284 C184 290 216 290 228 284 C226 304 214 314 200 314 C186 314 174 304 172 284 Z"/>
+    <path fill="#ffffff" d="M174 285 C186 291 214 291 226 285 C225 291 223 295 221 297 C208 300 192 300 179 297 C177 295 175 291 174 285 Z"/>
+    <path fill="#e8847e" d="M186 307 C194 302 206 302 214 307 C210 312 205 314 200 314 C195 314 190 312 186 307 Z"/>
+    <!-- bucket hat -->
+    <path fill="#9fbcae" d="M102 216 C108 196 140 186 200 186 C260 186 292 196 298 216 C300 226 292 230 280 228 C252 220 148 220 120 228 C108 230 100 226 102 216 Z"/>
+    <path fill="#b3cbbf" d="M140 196 C140 160 162 140 200 140 C238 140 260 160 260 196 C236 202 164 202 140 196 Z"/>
+    <path fill="#8fb0a1" d="M140 196 C164 202 236 202 260 196 L262 206 C236 212 164 212 138 206 Z"/>
+    <g fill="none" stroke="#7fa294" stroke-width="1.6" stroke-dasharray="5 4" stroke-linecap="round">
+      <path d="M116 218 C150 210 250 210 284 218"/><path d="M156 180 C184 186 216 186 244 180"/>
+    </g>
+    <path fill="#c5d8ce" opacity=".7" d="M166 154 C174 148 186 144 196 144 C184 152 176 164 174 178 C168 172 164 162 166 154 Z"/>
+  </g>
+</svg>

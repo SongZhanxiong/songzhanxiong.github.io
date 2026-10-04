@@ -22,37 +22,6 @@
 })();
 
 
-/* ---------- profile photo: depth parallax ---------- */
-(function(){
-  const box=document.getElementById('photo'); if(!box) return;
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  box.addEventListener('click',()=>box.classList.toggle('show'));
-  if(!reduce) start();
-  function start(){
-    const bg=box.querySelector('.bgl'), fr=box.querySelector('.frame'), fg=box.querySelector('.fg');
-    let tx=0,ty=0,x=0,y=0,last=0;
-    addEventListener('pointermove',e=>{
-      const r=box.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
-      tx=Math.max(-1,Math.min(1,(e.clientX-cx)/(innerWidth*.45)));
-      ty=Math.max(-1,Math.min(1,(e.clientY-cy)/(innerHeight*.45)));
-      last=performance.now();},{passive:true});
-    addEventListener('deviceorientation',e=>{
-      if(e.gamma==null) return;
-      tx=Math.max(-1,Math.min(1,e.gamma/25)); ty=Math.max(-1,Math.min(1,(e.beta-40)/25)); last=performance.now();},{passive:true});
-    (function loop(t){
-      // drift gently on its own when nobody is moving the pointer
-      const idle=Math.min(1,Math.max(0,(t-last-2500)/1500));
-      const gx=tx*(1-idle)+Math.sin(t/2600)*.55*idle, gy=ty*(1-idle)+Math.cos(t/3400)*.35*idle;
-      x+=(gx-x)*.06; y+=(gy-y)*.06;
-      const w=box.clientWidth/220;
-      bg.style.transform=`translate(${-x*7*w}px,${-y*5*w}px) scale(1.02)`;
-      fr.style.transform=`translate(${x*2*w}px,${y*1.5*w}px)`;
-      fg.style.transform=`translate(${x*6*w}px,${y*3*w}px) rotate(${x*.6}deg)`;
-      requestAnimationFrame(loop);
-    })(performance.now());
-  }
-})();
-
 /* =====================================================================
    JOURNEY — edit the two lists below.
    PLACES: where things happened (lon/lat in decimal degrees; label side
