@@ -1,206 +1,521 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zhanxiong Song · 宋展雄</title>
-<meta name="description" content="Zhanxiong (Yoyo) Song — doctoral researcher at the Department of Demography, University of Vienna. Temperature-related mortality, population structure, longevity inequality, and pensions.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600&text=%E5%AE%8B%E5%B1%95%E9%9B%84%E6%B2%88%E9%98%B3%E5%B9%BF%E5%B7%9E%E5%A0%AA%E5%9F%B9%E6%8B%89%E4%B8%8A%E6%B5%B7%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%B7%B4%E9%BB%8E%E7%BD%97%E6%96%AF%E6%89%98%E5%85%8B%E5%9B%A0%E6%96%AF%E5%B8%83%E9%B2%81%E5%85%8B%E8%A1%8C%E6%97%85&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<header>
-  <div class="progress" id="prog"></div>
-  <div class="wrap bar">
-    <a class="brand" href="#about">Zhanxiong Song <span class="zh">宋展雄</span></a>
-    <nav class="main" id="nav">
-      <a href="#about" class="active">About</a>
-      <a href="#research">Research</a>
-      <a href="#service">Community</a>
-      <a href="#journey">Journey</a>
-      <a href="SONG_Zhanxiong_CV_updated.pdf" target="_blank" rel="noopener">CV ↗</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
-</header>
-
-<main>
-<!-- ================= ABOUT ================= -->
-<section id="about" class="wrap">
-  <div class="hero">
-    <div class="photo"><img src="assets/img/portrait.svg" alt="Illustrated portrait of Zhanxiong Song"></div>
-    <div>
-      <div class="label">Doctoral Researcher · Department of Demography · University of Vienna</div>
-      <h1>Zhanxiong Song</h1>
-      <span class="zh">宋展雄</span>
-      <p class="tagline">Population research for the decisions insurers, pension funds, and policymakers actually make.</p>
-      <p>I am a doctoral researcher at the <a href="https://demografie.univie.ac.at/" target="_blank" rel="noopener">Department of Demography</a>, <a href="https://www.univie.ac.at/en/" target="_blank" rel="noopener">University of Vienna</a>, supervised by Prof. Erich Striessnig. I work at the intersection of demography and actuarial science. My doctoral project asks how population structure — ageing, educational expansion, and shrinking households — shapes the harvesting effect in temperature-related mortality, what this means for educational inequalities in lifespan, and how reliable today’s actuarial mortality assumptions remain in a warming climate. I am also interested in how people perceive their own survival chances and how those beliefs shape retirement and annuity decisions.</p>
-      <p>Before turning to demography, I spent six years as a pricing actuary and actuarial consultant in Shanghai. I am an Associate of the Society of Actuaries (ASA) and have completed all FSA exams; the DMAC module is in progress.</p>
-      <div class="creds" aria-label="Industry background">
-        <div><b>6</b><span>years in insurance pricing</span></div>
-        <div><b>10</b><span>insurance products launched</span></div>
-        <div><b>ASA</b><span>FSA candidate · all exams passed</span></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zhanxiong Song · 宋展雄</title>
+    <meta
+      name="description"
+      content="Zhanxiong (Yoyo) Song — doctoral researcher at the Department of Demography, University of Vienna. Temperature-related mortality, population structure, longevity inequality, and pensions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600&text=%E5%AE%8B%E5%B1%95%E9%9B%84%E6%B2%88%E9%98%B3%E5%B9%BF%E5%B7%9E%E5%A0%AA%E5%9F%B9%E6%8B%89%E4%B8%8A%E6%B5%B7%E7%BB%B4%E4%B9%9F%E7%BA%B3%E5%B7%B4%E9%BB%8E%E7%BD%97%E6%96%AF%E6%89%98%E5%85%8B%E5%9B%A0%E6%96%AF%E5%B8%83%E9%B2%81%E5%85%8B%E8%A1%8C%E6%97%85&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="brand" href="#about"
+          >Zhanxiong Song <span class="zh">宋展雄</span></a
+        >
+        <nav class="main" id="nav">
+          <a href="#about" class="active">About</a>
+          <a href="#research">Research</a>
+          <a href="#service">Community</a>
+          <a href="#journey">Journey</a>
+          <a href="SONG_Zhanxiong_CV_updated.pdf" target="_blank" rel="noopener"
+            >CV ↗</a
+          >
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+          <svg
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
       </div>
-      <div class="tags" data-tags>
-        <button class="tag" data-tag="climate">Climate &amp; Mortality</button>
-        <button class="tag" data-tag="mortality">Mortality &amp; Inequality</button>
-        <button class="tag" data-tag="ageing">Ageing &amp; Retirement</button>
-        <button class="tag" data-tag="pension">Pensions &amp; Insurance</button>
-      </div>
-      <div class="links">
-        <a href="mailto:zhanxiong.song@univie.ac.at">zhanxiong.song@univie.ac.at</a>
-        <a href="https://www.linkedin.com/in/zhanxiong-song-a9429397/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="SONG_Zhanxiong_CV_updated.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-      </div>
-    </div>
-  </div>
+    </header>
 
-  <div class="block" style="padding-top:0;padding-left:0;padding-right:0">
-    <div class="sec-head"><span class="n">01</span><h2>News</h2></div>
-    <div class="news collapsed" id="news">
-      <div class="news-item"><div class="d">10 / 2026</div><p><span class="up">Upcoming</span> Joining the workshop “Rethinking Healthy Ageing: Bridging Care, Community, and Innovation” in Pisa, Italy.</p></div>
-      <div class="news-item"><div class="d">09 / 2026</div><p>Started as a doctoral researcher at the <a href="https://demografie.univie.ac.at/" target="_blank" rel="noopener">Department of Demography</a>, University of Vienna, supervised by Prof. Erich Striessnig.</p></div>
-      <div class="news-item"><div class="d">07 / 2026</div><p>Completed the European Doctoral School of Demography (EDSD) at MPIDR and INED.</p></div>
-      <div class="news-item"><div class="d">06 / 2026</div><p>Presented a poster on subjective survival optimism, retirement timing, and annuity holding at the European Population Conference (EPC) 2026 in Bologna.</p></div>
-      <div class="news-item"><div class="d">05 / 2026</div><p>Our paper on the <a href="https://doi.org/10.4054/DemRes.2026.54.31" target="_blank" rel="noopener">European Parenting Leave Policies (EPLP) dataset</a> — leave entitlements for 21 countries from 1970 to 2024 — is out in <em>Demographic Research</em>.</p></div>
-      <div class="news-item"><div class="d">2025</div><p>Started the <a href="https://eaps.nl/page/european-doctoral-school-of-demography" target="_blank" rel="noopener">European Doctoral School of Demography</a> at MPIDR, Rostock, followed by INED, Paris.</p></div>
-      <div class="news-item"><div class="d">2025</div><p>Graduated from the Master of Global Demography, University of Vienna, with a thesis on educational inequalities in life expectancy and the future of pension equity in Austria.</p></div>
-      <div class="news-item"><div class="d">2024</div><p>Joined the Skill-PAL project at the Department of Demography, building the European Parenting Leave Policies (EPLP) dataset.</p></div>
-      <div class="news-item"><div class="d">2024</div><p>Joined the Society of Actuaries research project “Mental Health Crisis Impact on Mortality (ML247)” as a volunteer member.</p></div>
-      <div class="news-item"><div class="d">2023</div><p>Moved to Vienna to start the Master of Global Demography at the University of Vienna.</p></div>
-    </div>
-    <button class="more" id="newsMore">All news ↓</button>
-  </div>
-</section>
-
-<!-- ================= RESEARCH ================= -->
-<section id="research" class="wrap block">
-  <div class="sec-head"><span class="n">02</span><h2>Research</h2><span class="sub">Filter with the topics above</span></div>
-
-  <div class="group">
-    <button class="group-btn">Doctoral project · 2026 –<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9l6 6 6-6"/></svg></button>
-    <div class="group-body">
-      <div class="pub phd" data-tags="climate mortality pension ageing">
-        <div class="thumb"><svg viewBox="0 0 320 160" aria-label="U-shaped temperature–mortality curve with a harvesting dip"><rect width="320" height="160" fill="#f3f7f5"/>
-          <g stroke="#dbe3e0"><line x1="30" y1="132" x2="296" y2="132"/><line x1="30" y1="20" x2="30" y2="132"/></g>
-          <path d="M40 34 C80 96 120 116 160 118 C200 120 236 104 262 70 C272 56 280 40 286 26" fill="none" stroke="#2d6a5d" stroke-width="2.2"/>
-          <path d="M150 118 C170 119 190 118 206 112" fill="none" stroke="#9dbab0" stroke-width="6" stroke-linecap="round" opacity=".45"/>
-          <g font-family="Inter" font-size="8.5" fill="#6f7f7a" letter-spacing="1"><text x="36" y="148">COLD</text><text x="262" y="148">HEAT</text><text x="126" y="148">TEMPERATURE</text></g>
-          <text x="38" y="16" font-family="Inter" font-size="8.5" fill="#2d6a5d" letter-spacing="1">RELATIVE RISK</text>
-          <g fill="#2d6a5d"><rect x="236" y="96" width="5" height="5" transform="rotate(45 238.5 98.5)"/><rect x="66" y="78" width="5" height="5" transform="rotate(45 68.5 80.5)"/></g>
-        </svg></div>
-        <div>
-          <h3>A Demographic Analysis of the Role of Population Structure in the Harvesting Effect</h3>
-          <p class="au"><strong>Zhanxiong Song</strong> · supervised by Prof. Erich Striessnig</p>
-          <p class="ve">PhD in Demography, Department of Demography, University of Vienna</p>
-          <p class="why"><b>Why it matters</b>Climate-adjusted, education-specific life tables that pension funds and insurers can use to stress-test the mortality assumptions behind long-term liabilities — and that show policymakers who bears the risk of a warming climate.</p>
-          <p class="abs">Extreme heat and cold both raise mortality, and a mortality spike can be followed by a deficit as the pool of frail individuals is depleted — the harvesting effect. The project treats population structure not as a background control but as a driver of the magnitude, direction, and social distribution of this mortality displacement.</p>
-          <div class="btns"><span class="kind">Doctoral project</span></div>
+    <main>
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="wrap">
+        <div class="hero">
+          <div class="photo">
+            <img
+              src="assets/img/portrait.svg"
+              alt="Illustrated portrait of Zhanxiong Song"
+            />
+          </div>
+          <div>
+            <div class="label">
+              Doctoral Researcher · Department of Demography · University of
+              Vienna
+            </div>
+            <h1>Zhanxiong Song</h1>
+            <span class="zh">宋展雄</span>
+            <p class="tagline">
+              Population research for the decisions insurers, pension funds, and
+              policymakers actually make.
+            </p>
+            <p>
+              I am a doctoral researcher at the
+              <a
+                href="https://demografie.univie.ac.at/"
+                target="_blank"
+                rel="noopener"
+                >Department of Demography</a
+              >,
+              <a
+                href="https://www.univie.ac.at/en/"
+                target="_blank"
+                rel="noopener"
+                >University of Vienna</a
+              >, supervised by Prof. Erich Striessnig. I work at the
+              intersection of demography and actuarial science. My doctoral
+              project asks how population structure — ageing, educational
+              expansion, and shrinking households — shapes the harvesting effect
+              in temperature-related mortality, what this means for educational
+              inequalities in lifespan, and how reliable today’s actuarial
+              mortality assumptions remain in a warming climate. I am also
+              interested in how people perceive their own survival chances and
+              how those beliefs shape retirement and annuity decisions.
+            </p>
+            <p>
+              Before turning to demography, I spent six years as a pricing
+              actuary and actuarial consultant in Shanghai. I am an Associate of
+              the Society of Actuaries (ASA) and have completed all FSA exams;
+              the DMAC module is in progress.
+            </p>
+            <div class="creds" aria-label="Industry background">
+              <div><b>6</b><span>years in insurance pricing</span></div>
+              <div><b>10</b><span>insurance products launched</span></div>
+              <div><b>ASA</b><span>FSA candidate · all exams passed</span></div>
+            </div>
+            <div class="tags" data-tags>
+              <button class="tag" data-tag="climate">
+                Climate &amp; Mortality
+              </button>
+              <button class="tag" data-tag="mortality">
+                Mortality &amp; Inequality
+              </button>
+              <button class="tag" data-tag="ageing">
+                Ageing &amp; Retirement
+              </button>
+              <button class="tag" data-tag="pension">
+                Pensions &amp; Insurance
+              </button>
+            </div>
+            <div class="links">
+              <a href="mailto:zhanxiong.song@univie.ac.at"
+                >zhanxiong.song@univie.ac.at</a
+              >
+              <a
+                href="https://www.linkedin.com/in/zhanxiong-song-a9429397/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <a
+                href="SONG_Zhanxiong_CV_updated.pdf"
+                target="_blank"
+                rel="noopener"
+                >CV (PDF)</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="group">
-    <button class="group-btn">Working papers<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9l6 6 6-6"/></svg></button>
-    <div class="group-body">
-      <div class="pub" data-tags="ageing mortality pension">
-        <div class="thumb"><svg viewBox="0 0 320 160"><rect width="320" height="160" fill="#f3f7f5"/><g stroke="#dbe3e0"><line x1="36" y1="132" x2="296" y2="132"/><line x1="36" y1="22" x2="36" y2="132"/></g><path d="M36 30 C120 32 180 48 220 82 S278 126 296 130" fill="none" stroke="#2d6a5d" stroke-width="2.2"/><path d="M36 30 C110 36 160 62 200 96 S262 127 296 131" fill="none" stroke="#9dbab0" stroke-width="1.8" stroke-dasharray="5 4"/><text x="206" y="54" font-family="Inter" font-size="10" fill="#2d6a5d" letter-spacing="1">SUBJECTIVE</text><text x="112" y="104" font-family="Inter" font-size="10" fill="#6f7f7a" letter-spacing="1">LIFE TABLE</text></svg></div>
-        <div>
-          <h3>Subjective Survival Optimism, Retirement Timing, and Annuity Holding: Evidence from 19 European Countries</h3>
-          <p class="au"><strong>Zhanxiong Song</strong>, Cosmo Strozza, Paola Vázquez-Castillo</p>
-          <p class="ve">Working paper · Poster, European Population Conference 2026, Bologna · Data: SHARE</p>
-          <p class="why"><b>Why it matters</b>People who expect to live longer save, retire, and buy annuities differently. Understanding these beliefs helps insurers design retirement products and helps policymakers set retirement ages that people will actually act on.</p>
-          <div class="btns"><span class="kind">Working paper</span></div>
+        <div class="news-block">
+          <div class="sec-head"><h2>News</h2></div>
+          <div class="news">
+            <div class="news-item">
+              <div class="d">10 / 2026</div>
+              <p>
+                <span class="up">Upcoming</span> Joining the workshop
+                “Rethinking Healthy Ageing: Bridging Care, Community, and
+                Innovation” in Pisa, Italy.
+              </p>
+            </div>
+            <div class="news-item">
+              <div class="d">09 / 2026</div>
+              <p>
+                Started as a doctoral researcher at the
+                <a
+                  href="https://demografie.univie.ac.at/"
+                  target="_blank"
+                  rel="noopener"
+                  >Department of Demography</a
+                >, University of Vienna, supervised by Prof. Erich Striessnig.
+              </p>
+            </div>
+            <div class="news-item">
+              <div class="d">07 / 2026</div>
+              <p>
+                Completed the European Doctoral School of Demography (EDSD) at
+                MPIDR and INED, Paris, France.
+              </p>
+            </div>
+            <div class="news-item">
+              <div class="d">06 / 2026</div>
+              <p>
+                Presented a poster on subjective survival optimism, retirement
+                timing, and annuity holding at the European Population
+                Conference (EPC) 2026 in Bologna.
+              </p>
+            </div>
+            <div class="news-item">
+              <div class="d">05 / 2026</div>
+              <p>
+                Our paper on the
+                <a
+                  href="https://doi.org/10.4054/DemRes.2026.54.31"
+                  target="_blank"
+                  rel="noopener"
+                  >European Parenting Leave Policies (EPLP) dataset</a
+                >
+                — leave entitlements for 21 countries from 1970 to 2024 — is out
+                in <em>Demographic Research</em>.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  <div class="group">
-    <button class="group-btn">Publications<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9l6 6 6-6"/></svg></button>
-    <div class="group-body">
-      <div class="pub" data-tags="">
-        <div class="thumb"><svg viewBox="0 0 320 160"><rect width="320" height="160" fill="#f3f7f5"/><g fill="#2d6a5d"><rect x="40" y="30" width="8" height="100" opacity=".25"/><rect x="56" y="30" width="8" height="100" opacity=".45"/><rect x="72" y="30" width="8" height="100" opacity=".7"/></g><rect x="110" y="30" width="176" height="100" fill="#fff" stroke="#dbe3e0"/><rect x="120" y="42" width="156" height="6" fill="#dbe3e0"/><g fill="#2d6a5d"><rect x="120" y="58" width="40" height="7"/><rect x="165" y="58" width="60" height="7" opacity=".45"/><rect x="120" y="72" width="80" height="7" opacity=".6"/><rect x="205" y="72" width="30" height="7"/><rect x="120" y="86" width="55" height="7" opacity=".35"/><rect x="180" y="86" width="90" height="7" opacity=".75"/><rect x="120" y="100" width="100" height="7" opacity=".5"/><rect x="120" y="114" width="70" height="7"/></g></svg></div>
-        <div>
-          <h3>The European Parenting Leave Policies (EPLP) Dataset: Leave Duration Entitlements for 21 Countries from 1970 to 2024</h3>
-          <p class="au">Sonja Spitzer, Adèle Lemoine, <strong>Zhanxiong Song</strong>, Claudia Reiter, Angela Greulich, et al.</p>
-          <p class="ve"><em>Demographic Research</em> 54(31): 987–1008 · 2026</p>
-          <p class="why"><b>Why it matters</b>An open, harmonised dataset that lets researchers and policymakers compare parental leave entitlements across 21 European countries over five decades.</p>
-          <div class="btns"><span class="kind">Journal article</span><a href="https://doi.org/10.4054/DemRes.2026.54.31" target="_blank" rel="noopener">Paper</a><a href="https://www.demographic-research.org/volumes/vol54/31/54-31.pdf" target="_blank" rel="noopener">PDF</a><a href="https://eplp-dataset.org" target="_blank" rel="noopener">Dataset</a></div>
+      <!-- ================= RESEARCH ================= -->
+      <section id="research" class="wrap block">
+        <div class="sec-head">
+          <h2>Research</h2>
+          <span class="sub">Filter with the topics above</span>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="group">
-    <button class="group-btn">Theses<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9l6 6 6-6"/></svg></button>
-    <div class="group-body">
-      <div class="pub" data-tags="mortality pension ageing">
-        <div class="thumb"><svg viewBox="0 0 320 160"><rect width="320" height="160" fill="#f3f7f5"/><g font-family="Inter" font-size="9" fill="#6f7f7a" letter-spacing="1"><text x="30" y="42">TERTIARY</text><text x="30" y="82">SECONDARY</text><text x="30" y="122">PRIMARY</text></g><rect x="108" y="32" width="180" height="12" fill="#2d6a5d"/><rect x="108" y="72" width="150" height="12" fill="#6f9d91"/><rect x="108" y="112" width="120" height="12" fill="#b5ccc4"/><text x="224" y="150" font-family="Inter" font-size="9" fill="#a3b1ac" letter-spacing="1">e(65) · AUSTRIA</text></svg></div>
-        <div>
-          <h3>Educational Inequalities in Life Expectancy and the Future of Pension Equity in Austria</h3>
-          <p class="au"><strong>Zhanxiong Song</strong></p>
-          <p class="ve">Master’s thesis, Master of Global Demography, University of Vienna · Supervisors: Sonja Spitzer &amp; Miguel Sánchez-Romero</p>
-          <p class="why"><b>Why it matters</b>When life expectancy differs by education, a uniform retirement age quietly transfers pension wealth from the less to the more educated. The thesis quantifies this for Austria’s pension system.</p>
-          <div class="btns"><span class="kind">Master’s thesis · 2025</span></div>
+        <h3 class="group">Doctoral project · 2026 –</h3>
+        <div class="pub phd" data-tags="climate mortality pension ageing">
+          <div>
+            <h3>
+              A Demographic Analysis of the Role of Population Structure in the
+              Harvesting Effect
+            </h3>
+            <p class="au">
+              <strong>Zhanxiong Song</strong> · supervised by Prof. Erich
+              Striessnig
+            </p>
+            <p class="ve">
+              PhD in Demography, Department of Demography, University of Vienna
+            </p>
+            <p class="why">
+              <b>Why it matters.</b> Climate-adjusted, education-specific life
+              tables that pension funds and insurers can use to stress-test the
+              mortality assumptions behind long-term liabilities — and that show
+              policymakers who bears the risk of a warming climate.
+            </p>
+            <p class="abs">
+              Extreme heat and cold both raise mortality, and a mortality spike
+              can be followed by a deficit as the pool of frail individuals is
+              depleted — the harvesting effect. The project treats population
+              structure not as a background control but as a driver of the
+              magnitude, direction, and social distribution of this mortality
+              displacement.
+            </p>
+          </div>
         </div>
+
+        <h3 class="group">Working papers</h3>
+        <div class="pub" data-tags="ageing mortality pension">
+          <div>
+            <h3>
+              Subjective Survival Optimism, Retirement Timing, and Annuity
+              Holding: Evidence from 19 European Countries
+            </h3>
+            <p class="au">
+              <strong>Zhanxiong Song</strong>, Cosmo Strozza, Paola
+              Vázquez-Castillo
+            </p>
+            <p class="ve">
+              Working paper · Poster, European Population Conference 2026,
+              Bologna · Data: SHARE
+            </p>
+            <p class="why">
+              <b>Why it matters.</b> People who expect to live longer save,
+              retire, and buy annuities differently. Understanding these beliefs
+              helps insurers design retirement products and helps policymakers
+              set retirement ages that people will actually act on.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="group">Publications</h3>
+        <div class="pub" data-tags="">
+          <div>
+            <h3>
+              The European Parenting Leave Policies (EPLP) Dataset: Leave
+              Duration Entitlements for 21 Countries from 1970 to 2024
+            </h3>
+            <p class="au">
+              Sonja Spitzer, Adèle Lemoine, <strong>Zhanxiong Song</strong>,
+              Claudia Reiter, Angela Greulich, et al.
+            </p>
+            <p class="ve">
+              <em>Demographic Research</em> 54(31): 987–1008 · 2026
+            </p>
+            <p class="why">
+              <b>Why it matters.</b> An open, harmonised dataset that lets
+              researchers and policymakers compare parental leave entitlements
+              across 21 European countries over five decades.
+            </p>
+            <div class="btns">
+              <a
+                href="https://doi.org/10.4054/DemRes.2026.54.31"
+                target="_blank"
+                rel="noopener"
+                >Paper</a
+              ><a
+                href="https://www.demographic-research.org/volumes/vol54/31/54-31.pdf"
+                target="_blank"
+                rel="noopener"
+                >PDF</a
+              ><a href="https://eplp-dataset.org" target="_blank" rel="noopener"
+                >Dataset</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <h3 class="group">Theses</h3>
+        <div class="pub" data-tags="mortality pension ageing">
+          <div>
+            <h3>
+              Educational Inequalities in Life Expectancy and the Future of
+              Pension Equity in Austria
+            </h3>
+            <p class="au"><strong>Zhanxiong Song</strong></p>
+            <p class="ve">
+              Master’s thesis, Master of Global Demography, University of
+              Vienna, 2025 · Supervisors: Sonja Spitzer &amp; Miguel
+              Sánchez-Romero
+            </p>
+            <p class="why">
+              <b>Why it matters.</b> When life expectancy differs by education,
+              a uniform retirement age quietly transfers pension wealth from the
+              less to the more educated. The thesis quantifies this for
+              Austria’s pension system.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TALKS & COMMUNITY ================= -->
+      <section id="service" class="wrap block">
+        <div class="sec-head"><h2>Talks &amp; Community</h2></div>
+        <div class="cols">
+          <div>
+            <h3>Research volunteering</h3>
+            <div class="li">
+              <span class="y">2024 –</span>Member, Society of Actuaries project
+              “Mental Health Crisis Impact on Mortality” (ML247)
+            </div>
+          </div>
+          <div>
+            <h3>Conferences &amp; talks</h3>
+            <div class="li">
+              <span class="y">10 / 2026 · upcoming</span>Workshop “Rethinking
+              Healthy Ageing: Bridging Care, Community, and Innovation”, Pisa,
+              Italy
+            </div>
+            <div class="li">
+              <span class="y">06 / 2026</span>Poster, European Population
+              Conference (EPC), Bologna, Italy
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="wrap block">
+        <div class="sec-head">
+          <h2>Journey</h2>
+          <span class="sub">Pick a stop to read more</span>
+        </div>
+        <!-- One stop = one radio input + one label (the station) + one article (the details).
+             Copy a block of three to add a stop; give each a new id (j1, j2, …). -->
+        <div class="metro">
+
+          <input type="radio" name="journey" id="j1" />
+          <label for="j1" class="stop" style="--c:#1c2b27">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-6 0V-6H6V0M-9-6Q0-9.5 9-6L6-10H-6ZM-3.5-10V-14H3.5V-10M-6.5-14Q0-17 6.5-14L3.5-17.5H-3.5ZM0-17.5V-20.5M-2 0V-3.5H2V0"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Shenyang</span> <span class="yr">Hometown</span></span>
+          </label>
+          <article style="--c:#1c2b27">
+            <h3 class="place"><span class="en">Shenyang</span> <span class="ctry">China · Hometown</span></h3>
+            <p class="lede">Where I grew up — the very first footprint.</p>
+          </article>
+
+          <input type="radio" name="journey" id="j2" />
+          <label for="j2" class="stop" style="--c:#2d6a5d">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-4 0C-1-8-1-14-3-22H3C1-14 1-8 4 0M-2.4-6H2.4M-1.9-12H1.9M-2.4-18H2.4M0-22V-28"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Guangzhou</span> <span class="yr">2011 – 2015</span></span>
+          </label>
+          <article style="--c:#2d6a5d">
+            <h3 class="place"><span class="en">Guangzhou</span> <span class="ctry">China · 2011 – 2015</span></h3>
+            <p class="lede">Heading south for university.</p>
+            <div class="act">
+              <h4>Bachelor of Accounting</h4>
+              <p>Sun Yat-sen University</p>
+              <p class="per">2011 – 2015</p>
+            </div>
+          </article>
+
+          <input type="radio" name="journey" id="j3" />
+          <label for="j3" class="stop minor" style="--c:#8fb3a8">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-10 0L-4-9L-1-5L4-13L10 0M2-10.5L4-8.5L6-10.5"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Innsbruck</span> <span class="yr">2013</span></span>
+          </label>
+          <article style="--c:#8fb3a8">
+            <h3 class="place"><span class="en">Innsbruck</span> <span class="ctry">Austria · 2013</span></h3>
+            <p class="lede">A short detour into the Alps.</p>
+            <div class="act">
+              <h4>Exchange semester</h4>
+              <p>Management Center Innsbruck (MCI)</p>
+              <p class="per">2013</p>
+            </div>
+          </article>
+
+          <input type="radio" name="journey" id="j4" />
+          <label for="j4" class="stop" style="--c:#2d6a5d">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-11 0Q0-5 11 0M-7-1.5L0-18L7-1.5M-3-2.5L0-18L3-2.5M0-18V-27M0-27L6-25L0-23"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Canberra</span> <span class="yr">2015 – 2017</span></span>
+          </label>
+          <article style="--c:#2d6a5d">
+            <h3 class="place"><span class="en">Canberra</span> <span class="ctry">Australia · 2015 – 2017</span></h3>
+            <p class="lede">Training as an actuary.</p>
+            <div class="act">
+              <h4>Master of Actuarial Practice</h4>
+              <p>The Australian National University</p>
+              <p class="per">2015 – 2017</p>
+            </div>
+          </article>
+
+          <input type="radio" name="journey" id="j5" />
+          <label for="j5" class="stop" style="--c:#3d6485">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-5 0L0-8L5 0M0-4.4V-24"/><circle cy="-8" r="3.6"/><circle cy="-16" r="2.3"/><circle cy="-21" r="1"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Shanghai</span> <span class="yr">2018 – 2023</span></span>
+          </label>
+          <article style="--c:#3d6485">
+            <h3 class="place"><span class="en">Shanghai</span> <span class="ctry">China · 2018 – 2023</span></h3>
+            <p class="lede">Six years of learning the craft.</p>
+            <div class="act">
+              <h4>Actuarial Consultant</h4>
+              <p>Sunlight Consulting (Shanghai) · motor insurance pricing</p>
+              <p class="per">2018 – 2019</p>
+            </div>
+            <div class="act">
+              <h4>Pricing Actuary</h4>
+              <p>China Construction Bank Life Insurance · product development</p>
+              <p class="per">2020 – 2023</p>
+            </div>
+            <p class="tale">Shanghai is where I found out what actuarial work really feels like. As a consultant I priced motor insurance for clients; later, at CCB Life, I got to build products from scratch — annuities, health and term life, ten of them in the end. What stayed with me was how much of it was about people: understanding what customers really needed from a policy, and realising that behind every price sits a quiet question about how long people live, and why some live longer than others.</p>
+          </article>
+
+          <input type="radio" name="journey" id="j6" />
+          <label for="j6" class="stop" style="--c:#6f8a3a">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><circle cy="-13" r="9"/><path d="M-5.5 0L0-13L5.5 0M-8 0H8M0-22V-4M-9-13H9M-6.4-19.4L6.4-6.6M-6.4-6.6L6.4-19.4"/><circle cy="-13" r="1.3"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Vienna</span> <span class="yr">2023 – 2025</span></span>
+          </label>
+          <article style="--c:#6f8a3a">
+            <h3 class="place"><span class="en">Vienna</span> <span class="ctry">Austria · 2023 – 2025</span></h3>
+            <p class="lede">Curiosity called me back to the classroom — to understand the populations behind the numbers, and to work on questions that matter to the industry and to society.</p>
+            <div class="act">
+              <h4>Master of Global Demography</h4>
+              <p>University of Vienna</p>
+              <p class="per">2023 – 2025</p>
+              <p>Thesis on educational inequalities in life expectancy and the future of pension equity in Austria, supervised by Sonja Spitzer and Miguel Sánchez-Romero.</p>
+            </div>
+            <div class="act">
+              <h4>Research Assistant, Skill-PAL Project</h4>
+              <p>Department of Demography, University of Vienna</p>
+              <p class="per">2024 – 2025</p>
+              <p>Helped build the European Parenting Leave Policies (EPLP) dataset, covering 21 countries from 1970 to 2024 — published in <a href="https://doi.org/10.4054/DemRes.2026.54.31" target="_blank" rel="noopener"><em>Demographic Research</em></a> (2026).</p>
+            </div>
+          </article>
+
+          <input type="radio" name="journey" id="j7" />
+          <label for="j7" class="stop" style="--c:#6f8a3a">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-4 0L-2.6-16H2.6L4 0ZM-3.6-5H3.6M-3.1-10.5H3.1M-2.6-16V-20H2.6V-16M-3.4-20L0-23.5L3.4-20M5-19L8-20.5M5-17L8-16"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Rostock</span> <span class="yr">2025 – 2026</span></span>
+          </label>
+          <article style="--c:#6f8a3a">
+            <h3 class="place"><span class="en">Rostock</span> <span class="ctry">Germany · 2025 – 2026</span></h3>
+            <p class="lede">The European Doctoral School of Demography begins on the Baltic coast.</p>
+            <div class="act">
+              <h4>European Doctoral School of Demography</h4>
+              <p>Max Planck Institute for Demographic Research (MPIDR)</p>
+              <p class="per">2025 – 2026</p>
+              <p>Project on subjective survival probability, life insurance, annuities, and retirement age, supervised by Cosmo Strozza (CPop), Simon Rabaté (INED), and Paola Vázquez-Castillo (CPop).</p>
+            </div>
+          </article>
+
+          <input type="radio" name="journey" id="j8" />
+          <label for="j8" class="stop" style="--c:#6f8a3a">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><path d="M-7 0L-2.4-12L-1.2-20L0-25L1.2-20L2.4-12L7 0M-4.6-6H4.6M-2.8-12H2.8M-2.3 0Q0-4 2.3 0"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Paris</span> <span class="yr">2026</span></span>
+          </label>
+          <article style="--c:#6f8a3a">
+            <h3 class="place"><span class="en">Paris</span> <span class="ctry">France · 2026</span></h3>
+            <p class="lede">…and ends in Paris.</p>
+            <div class="act">
+              <h4>European Doctoral School of Demography</h4>
+              <p>Institut national d’études démographiques (INED)</p>
+              <p class="per">2026 · completed 07 / 2026</p>
+            </div>
+          </article>
+
+          <input type="radio" name="journey" id="j9" checked />
+          <label for="j9" class="stop" style="--c:#6f8a3a">
+            <svg viewBox="-14 -30 28 31" aria-hidden="true"><circle cy="-13" r="9"/><path d="M-5.5 0L0-13L5.5 0M-8 0H8M0-22V-4M-9-13H9M-6.4-19.4L6.4-6.6M-6.4-6.6L6.4-19.4"/><circle cy="-13" r="1.3"/></svg>
+            <i></i>
+            <span class="nm"><span class="en">Vienna</span> <span class="yr">Since 09 / 2026</span></span>
+          </label>
+          <article style="--c:#6f8a3a">
+            <h3 class="place"><span class="en">Vienna</span> <span class="ctry">Austria · Since 09 / 2026</span></h3>
+            <p class="lede">Back in Vienna, now as a doctoral researcher.</p>
+            <div class="act">
+              <h4>Doctoral Researcher</h4>
+              <p>Department of Demography, University of Vienna</p>
+              <p class="per">Since 09 / 2026</p>
+              <p>PhD on how population structure shapes the harvesting effect in temperature-related mortality, supervised by Prof. Erich Striessnig.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© <span id="yr"></span> Zhanxiong Song · 宋展雄</span
+        ><span>Vienna · Last updated October 2026</span>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- ================= TALKS & COMMUNITY ================= -->
-<section id="service" class="wrap block" style="padding-top:0">
-  <div class="sec-head"><span class="n">03</span><h2>Talks &amp; Community</h2></div>
-  <div class="cols">
-    <div>
-      <h3>Research volunteering</h3>
-      <div class="li"><span class="y">2024 –</span>Member, Society of Actuaries project “Mental Health Crisis Impact on Mortality” (ML247)</div>
-    </div>
-    <div>
-      <h3>Conferences &amp; talks</h3>
-      <div class="li"><span class="y">10 / 2026 · upcoming</span>Workshop “Rethinking Healthy Ageing: Bridging Care, Community, and Innovation”, Pisa, Italy</div>
-      <div class="li"><span class="y">06 / 2026</span>Poster, European Population Conference (EPC), Bologna, Italy</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= JOURNEY (scrollytelling) =================
-     The chapters are generated from STEPS in the script below.     -->
-<section id="journey" class="wrap">
-  <div class="sec-head"><span class="n">04</span><h2>Journey</h2><span class="sub">Scroll to follow the route · drag, zoom, or click a landmark</span></div>
-  <div class="story">
-    <div class="stage" id="stage">
-      <svg id="jsvg" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of the places Zhanxiong Song has lived and worked">
-        <g id="jland">
-          <path class="land" d="M433.5,127.9L433.1,126.4L433,123.2L430.5,122.8L428.9,121.3L427.7,121.2L427.4,119.8L425,116.4L422.6,115.4L423,114.4L427.3,114.8L425.2,113.5L425,112.7L426,110.9L430.1,110.7L432.7,111L430.9,109.9L431.6,106.9L431.2,104.7L430,103.4L428.3,103.2L427,103.9L423.4,102.6L420.8,103.7L419.5,104.9L417.2,105.4L416.9,106.3L415.2,107.4L413.9,108.9L411.3,109.7L410.4,113.4L409.3,114.2L409.5,115.3L410.6,115.7L412.1,117.4L413.1,119.6L413.4,121.9L418.6,127.6L421.1,130.2L421.8,131.5L424.2,133.6L425.1,133.6L426.8,135.1L425,134.9L423.7,135.5L423.3,140.8L422.5,140.6L422.2,142.1L422.5,143.9L423.9,147.6L425.6,148.4L428.2,148.8L430.1,150.7L432.5,152L436.8,152.6L441.2,151.4L443.5,151.7L442.9,149.2L442,146.3L441.5,141.8L440.5,140.2L438.3,139.9L438.3,138.3L439.8,138.6L439,136.8L436.7,136.8L435.7,134.5L435.9,131.4L436.9,132.5L438.7,132.5L439.4,133.2L441.7,133.1L442.8,132.1L442,130.7L439.8,129.1L438.4,126.4L435.8,126.4L435.1,127L435.4,130.6ZM567.8,-20L568,-19.9L568.1,-20L568.8,-20L568.8,-20L570.7,-19.5L570.9,-18.9L569.8,-17.8L567.7,-16.8L566.3,-16.5L563,-15.2L563.5,-14.6L561.7,-14.1L560.2,-12.8L557.7,-12.5L556.8,-11.3L555.4,-11.3L555,-9.9L553.9,-9.2L555.5,-9.4L556.8,-10.6L560.6,-10.7L561.9,-11.3L564,-11.5L564.3,-12L566,-11.9L568.1,-12.9L564.8,-12.9L564.5,-13.7L565.3,-14L568,-13.7L572.1,-12.8L573.9,-13L573.3,-13.8L576.1,-12.6L576,-11.8L577.9,-11L578.6,-11.4L576.9,-12L580.5,-12.4L581.7,-12.8L585.3,-12.7L588,-12.4L591.5,-12.4L592.6,-11L597.6,-10L601.5,-9.8L604.1,-9.9L607,-9.7L608,-9.9L608.5,-10.8L606.3,-12.1L608.7,-13L613.3,-12.1L615.2,-12.2L616.9,-11.4L617.5,-12.2L619.9,-11.9L624.5,-10.8L625.6,-10.2L624.8,-9.6L626.1,-9.6L627.5,-8.9L625.6,-8.2L627.9,-8L629.5,-7.4L629.9,-6.5L628.9,-6.4L624.1,-7.8L624.7,-7.3L630.1,-5.2L630.4,-5.8L631.8,-5.1L630.2,-4.8L631.4,-4.5L635.1,-2.6L640.9,-1.1L641.5,-1.8L640.7,-4.7L640.9,-5.8L645,-4.1L647.5,-3.7L649.3,-3.7L649.8,-4.2L652,-4.7L653.8,-4.4L659.7,-3.1L660.7,-3.5L659.3,-3.7L659.1,-4.4L660.5,-4.7L663,-3.9L665.2,-4.1L663.4,-4.9L662,-6.1L662.7,-7L659.9,-6.8L659.1,-7.4L659.8,-8.1L662.4,-8.1L664,-8.4L661.5,-9.6L666.4,-9L670.9,-8.9L676.6,-8.4L680.3,-7.9L680.7,-7.5L676.1,-7.6L674.8,-7.1L676.1,-6.8L677.4,-7.2L682,-7.3L682.9,-7.1L681.7,-5.9L681.6,-6.7L679.7,-6.9L681,-5.9L679.1,-5.8L680.3,-4.9L682,-5.1L683,-5.8L683.4,-6.9L684.4,-7.5L687.5,-7.4L691.5,-6.8L693.7,-6.1L694.1,-5.5L691.7,-5.3L696.1,-4.2L698.2,-4L697.7,-3.2L699.5,-3.7L701.8,-3.3L704.5,-2.3L703.7,-2.1L706.7,-1.5L710.4,-1.7L716,-2.5L722.8,-2.3L728,-1.3L729.9,-0.8L732.3,0.6L733.5,2.4L734.2,2.7L738.4,3.4L741.2,5.5L743.7,6.3L741.4,4.4L742.8,3.3L745.1,3L748.1,3L749.7,3.4L753.7,3.5L757.6,3.9L758.8,2.9L761.2,3.6L763.2,4.8L767.3,5.6L769.7,6.8L772.4,6.6L772.8,5.7L768.8,3.5L767.3,3.4L767.2,2.4L765.9,1.4L773.1,2L776.1,2.6L777.2,2.3L780.6,2.4L783.4,2.2L788.4,3.3L795.7,4.3L800.9,5.9L801.4,6L821.2,22.2L821.2,22.2L821.2,22.2L820.8,22.3L820.6,23.2L818.6,24.2L815.6,23.7L812.2,22.4L813,23.4L808.9,22.7L811,23.7L812.7,24.1L814.1,23.4L815.8,24.8L818.6,25.8L818.8,25.2L822.1,26.9L824.7,28.7L828.2,30.2L828.8,30.9L831.4,32.3L831.6,33.9L826.9,32.9L824.2,32.7L818.6,35.5L818.5,36L816.1,36.5L815.8,37.8L814.4,38.9L814.9,39.3L811.7,42.1L812.9,44.1L811.2,43.7L808.3,42.1L806.3,41.4L802.7,41.5L799.9,42.6L799.6,44.5L798.5,44.1L797.1,41.8L794.4,43.5L795.2,44.6L792.2,43.7L790.2,43.8L789.8,44.7L791.6,47L791.9,48.3L791.3,50.8L792.1,52.4L795.2,53.8L795.3,53L797.7,53.7L797.9,55.6L800.2,58.1L802.2,58.6L804.3,60.7L804.1,61.5L801.9,60.7L802.2,59.7L801,59.5L801.4,60.5L800.5,61.3L801.1,63.3L802.1,64.6L805.8,67.3L805.3,68.3L801.9,68.3L800.7,69.9L801.4,71.7L804.5,74.7L802.5,74.2L800.4,75.9L801.9,78.5L802.4,80.8L800.5,84.6L798.5,83.1L793.7,77.6L791,75.3L787,71.1L782.5,66.8L780.5,64.6L778.3,61.4L776.9,58.6L777.7,56.5L777.4,55.1L775.6,53.9L777.7,53.7L777.6,52.7L779.4,52.7L780.7,50.9L781.1,49.2L780.6,47.8L781.3,45.9L782,45.6L782.9,43.3L782.6,42.1L784.4,40.5L786.3,40L785.3,39.5L785.4,38.1L784.3,37.6L783.9,36.5L782,34L782.5,33.3L785.1,33.2L780.4,32.3L778,32.9L780.2,36.2L781.4,36.6L781.2,37.2L780,36.5L778.7,36.7L777.1,39.8L777,40.7L775.5,41.2L774.6,39.5L772.9,39.8L771.8,38.3L771.2,36.2L770.2,35.7L768.9,36.5L766.5,35.6L763.8,36.3L761.6,36.1L760.3,37.5L760.9,38.4L760.2,39.6L760.3,41L759,42.3L758.9,44.7L759.6,46L761,46L763.7,46.8L764.4,47.5L761.9,47.4L760.9,48L758.1,47.4L757.5,48.6L755.6,48.2L755,48.8L752.5,48.9L751,48L754.3,47.4L752.4,46.9L750.5,46L747.6,45.9L743.3,45L741.3,46L742.7,47.1L741.3,47.2L739.9,46.5L737.9,47.2L733.7,46.5L733.9,47.4L732.8,47.5L730.7,46.5L722.8,46.7L721.2,47.3L720.2,48.4L720.2,49.5L718.4,51.8L719,53.6L717.9,54.2L717.2,55.8L715.7,57.4L715.1,61.1L712.4,64.6L710.6,66.5L711.2,67.4L713.8,68.1L717,67.9L719.3,71.6L720.8,71.6L719.6,70.2L722.8,71L721.8,72.7L723.7,72.8L725.9,71.6L724.7,69.3L727.3,69.9L728.4,69.5L730.8,70.5L732.2,71.6L735.6,73.1L738,74.5L737.7,75.2L739.8,78.2L741.5,79.1L741.9,80.3L741.3,81.6L741.6,83.4L743,86.6L746,91L747.9,96L746.9,99L746.9,101.3L746.3,102.9L746.8,105.3L746.4,108.7L744.8,111.8L743.4,115.6L743.3,118.1L742.8,119.6L739.1,122.9L737.4,123.5L735.2,122.7L733.7,122.6L732.7,120.6L731.5,121.6L730.9,120.9L730,123.9L728.2,123.7L728.9,125.4L728.1,125.4L726.8,128.2L728.5,132.3L725,136.2L722.7,137.4L723.2,140.2L725,140.8L728.2,143L730.1,145.2L734.7,149.5L736.3,152L737.3,155.4L738,155.4L738.5,158L738.3,159.6L735.7,160L735.8,161.1L734,160.3L732.8,160.7L733,161.9L732.2,163L731.4,161.6L730.6,163.1L729.2,163.6L727.7,162L728.7,161.9L726.9,159.7L726.8,157.3L727.4,156.7L726,154.8L724.8,152.3L723.4,151.4L724.5,150.7L726.2,151.3L724.8,149.9L723.2,147L722,146.6L721.3,147.2L719.5,146.1L718.4,147.3L716.6,146.3L717.3,145.7L715,145.4L715.6,143.3L716.3,142.8L715.3,141.8L715.5,139.8L714.8,138.7L712.1,137.6L711.8,138.2L710,136.4L709.3,137.2L705.6,138L703.5,139.4L701.9,141.8L700.3,142.5L699.7,141.6L701.5,140.7L701.5,139.3L699.4,139.3L699.4,137.1L700.3,136.6L700.9,133.8L698.7,132.4L695.9,132.1L694.7,135.3L691.9,136.9L691.5,139.2L690.8,140.4L688.6,140.9L687.3,140.1L686.5,140.6L686.6,143L689.2,145.1L693,145.8L694.2,147.4L694.4,149.2L696.7,150.2L700.4,146.8L704.6,148.6L706,148.3L708.3,148.7L708.9,151.1L708.5,151.6L706.6,151L703.6,152.7L703.2,154.8L701.3,156.3L699.9,159L700,161.7L704.9,163.9L706.9,167L709.4,170L709.9,171.7L712.5,173.1L712.8,173.9L715,175.4L715.4,176.3L711.6,175.5L709.5,174.4L708.4,175.1L710.4,175L715.2,178.2L716.7,180.1L715.4,180.5L713.3,182.9L711.8,182.7L712.9,183.9L714.8,183.1L717.3,184.7L719.1,185.2L717.3,187.1L718.9,186.5L719.5,188.8L718.6,189.4L718.4,191.1L719.3,192.5L717.4,192.8L715.7,198.6L715.5,200.7L713.4,200.1L715.1,202.3L713.1,204L714.5,203.9L715.1,206.9L713.3,206.7L712.9,209.1L711.9,210.7L710,210.5L710.3,212.4L709,214.3L708.4,214.3L705.5,216.7L705.3,218.6L704.4,218.5L701.6,219.7L700.3,219.3L699.1,220.2L696.8,220.6L697.1,221.8L695.8,220.7L693.9,219L693.6,217.8L692.6,218.8L693.9,220.3L694.1,222L694,222.3L689.6,224.4L688.1,223.9L687,225.3L684.6,225.6L683.1,227L682.4,226.4L681.9,228.7L683.5,230.3L682.2,231.6L680.5,229.8L679.6,227.4L680.3,225.7L678.6,225.4L676.9,225.9L674,223.7L674.4,224.8L672.3,225.6L670.2,226.7L669.5,228.3L667.5,228L668,229.3L667.5,231.5L665.6,233.1L664.9,237.8L666.4,240.1L669.3,242.7L669.4,243.8L672.8,247.8L676.7,250.5L680.6,255.1L682.1,258.3L683.5,262.4L683.7,265.2L684.8,268.5L683.8,268.2L684.2,272.7L683.5,274.5L676.8,279L675.7,277.8L675.3,279.1L673.6,279.5L675,280.4L673.5,283.1L672.4,282.5L672.7,283.8L670.1,285.3L668.7,287.5L667.2,287.7L667.2,282.8L668.1,281.4L665.1,279L663,278.1L661.4,278L662,276.7L661.1,275.4L659.7,276.6L659.3,273.9L658.4,272.8L656.6,270.8L652.9,268L651.8,268.4L649.4,267.9L649.4,264.5L648.1,264L645.6,264.8L646,266.3L645.7,268L646.1,270.5L644.9,273.9L644.5,276.7L643.5,279.4L643.7,282.2L644.8,284.7L646.1,284.2L647,285.2L647.3,287.3L648.8,289.3L649.8,293.2L648.5,291.9L649.7,294.4L652.3,296L654.2,296L656.9,299L660.7,302.4L662.6,305.7L663,307.9L662.6,310.8L663,314.9L664.6,316.6L666.4,320.7L666.7,322.1L664.2,322L663.3,322.6L662.8,321.5L660.2,320L654.2,315.1L654.1,313.3L651.6,309.9L651.1,306.6L649.8,302.1L649.7,300.2L648.6,298L646.8,295.9L646.2,293.6L645.3,293.6L643.8,291.1L641.7,288.9L640.6,289.5L640.2,287.9L640.6,284.4L641.6,280L641.1,280.8L640.4,277.7L641.2,276.2L641.2,273.3L639.8,265.8L638.1,263L635.7,257.6L634.7,252.7L634.1,252L634.3,249.4L632.9,249.6L631.8,247L630.8,245.8L629.8,249.4L626.6,251.3L625.3,253.4L624.9,252L623.4,253L622.2,252.6L622.1,250.2L620.3,252L620.9,244.6L619.8,241.5L618,238.4L617.5,236.3L617.3,238.1L615.2,235.9L616.6,236.5L617.2,235.5L614.1,232.6L612.7,232.5L612.7,231L611.4,231.4L609.4,229L608,227.2L607.4,224.7L606.2,222.1L604.3,218.9L602.4,220.3L600.5,217.7L600.2,219.6L601.2,222L600.1,224L598.8,223.1L596.6,224.5L595.1,222.8L595.5,224.9L594.3,225.2L593.4,222.6L593.6,224.8L591.4,224.7L591.5,222.6L589.9,224.9L587.7,225.6L586.9,226.9L587.7,229.5L587.1,231.3L585.4,233.2L582.7,234.3L582.1,233.3L581.4,235.2L579.8,237.4L577.6,241.1L575.9,242.1L574.3,244.4L572,246L570.9,247.6L571,249.4L569.1,250.5L567.2,250.5L566.2,253.3L564.8,252.6L563.4,253.5L562.7,256.6L563.4,258.9L563.4,260.7L564.7,264.8L564.5,268L563.2,271.4L563,273.4L563.5,275.2L563.7,279.4L561.9,279.5L560.5,282.5L560.5,284.5L558.2,285.2L557.4,286.3L556.9,288.7L554.8,290.2L552.4,288.6L550.6,286.2L549.5,283.6L549.5,281.3L547.4,277.2L546.4,274.4L544,271.1L541.9,266.2L540.9,262.4L539.7,259.3L537.7,256.6L537.5,255L535.3,251.9L534.6,249.9L533.3,244.3L531.6,239.2L530.8,235.2L530.1,233.7L530.5,230.1L529.9,227.5L528.9,225.8L530.4,224.7L528.5,224.7L529,223.3L527.2,222.3L526.4,224.1L527.4,225.5L526.7,227.3L522.9,229.3L520.6,228.8L518.6,227.2L513.9,222.3L518.4,220.4L519.2,218.5L516.2,219.5L514.4,219.1L511.8,217.5L510.6,215.6L511.9,214.3L509.9,215.5L509.4,214.2L507.4,214.5L505.8,212.7L504.8,209.9L502.9,209.4L502.6,207.6L501.3,205.9L498.4,207L494.8,207.2L494.4,207.8L492.3,207.1L489.9,207L489.7,207.7L486,207.5L485,208.1L482.1,207.7L481.4,208.2L478.3,207.4L471.7,206.7L470.6,206L468.2,205.9L464.6,204.9L462.5,199.5L461.7,198.6L459.9,198.1L457.2,199.2L454.4,201.2L453.4,201.4L451.7,200.5L449.5,200.4L448.4,199.3L445.1,197.5L444.1,196.1L442.2,195.1L440.7,195L439,193.6L436.9,189.1L433.5,185L433,183.6L431,184.4L428.9,183.1L427.1,184.8L424.8,184.7L425.7,186.6L424.1,187.4L425.4,187.7L427.5,191.6L429.1,194.4L429.3,195.6L431.2,196.7L432,198.2L434.6,199.9L435.8,202.4L435.1,203.4L437.8,208.3L438.9,209.7L438.4,206.6L439.1,204L440,203.2L441.3,204.4L441.3,206.2L441.9,208L441.5,210.3L440.9,210.6L441.2,211.9L442.2,212.2L443.8,213.6L446.7,212.8L451.7,213.2L453.6,212.2L454.8,209.6L456.1,208.5L457.5,206.3L459,204.9L459.4,203.6L460.7,202.3L460.5,205.6L461.3,208.8L462.6,211.3L465.2,213.9L470.8,215.3L475.3,220.4L476.5,220.7L476.5,222.1L475.2,225.6L473.4,227.5L472.1,230.9L470.5,230.1L469.7,231.7L469.3,234.7L470,237.6L467.5,238.1L465.5,239.6L465.2,241.7L464.2,242.7L461,243.2L459.6,247.1L455.5,247.3L453.7,248.4L451.6,249L448.6,250.7L448.1,252.3L448.4,253.8L446,255.3L441.7,256.7L440.2,257.6L436.9,258.7L434.3,261.5L431.5,261.5L429.2,263.4L425.6,264.5L422.1,264.9L419.7,267.4L417.9,267.4L415.2,268.4L413.2,267.3L412.1,265.3L412.3,263.5L411.4,261.7L411,259.1L409.5,253.8L409.6,250.3L409.1,248.6L407.7,246.7L407.2,245.2L404.9,243L402.5,239.2L401.9,237.3L400.3,234L397.4,231.6L395.4,230.3L393,226.5L392.4,223.8L392.6,221.3L392.2,219.5L388.8,214L387.3,212.7L385.7,212.1L384,209.6L383.8,207.3L380.9,203.4L379.6,201L376.6,197L374.8,194.1L372.5,193.5L373,191.8L373.4,187.7L373.4,186.7L373.1,187.1L372.5,188.1L371.7,194.2L371.1,195.4L369.1,194L366.9,191.5L366,189L364.4,186.9L363.6,184.7L362.9,186.4L363.9,187.5L364.3,189.4L365.5,191.5L368.3,194.7L368.5,196.1L370,198.8L370.4,200.8L373.2,205.4L376.2,211.3L378.7,213.8L377.8,213.9L377.8,216.2L378.7,218.6L381,220.2L383.8,223.2L384.1,225.2L385.4,227.1L385.7,232.3L386,234.9L387.2,238.5L389.1,239.8L392,242.5L393.4,245.2L394.5,248.6L395.4,252.5L397.6,256.3L397.8,254.7L399.3,256.9L403.4,258.7L405.5,261.8L408,263.7L408.7,265.5L411.8,267.9L413.1,270.4L412.6,271.5L410.1,273.5L412.6,273.7L415.2,277.2L417.5,278.9L419.8,278.8L423.3,276.9L426.4,277.4L429.8,275.3L432.3,275.5L435,274.6L436.1,274.9L440.8,273.6L443.5,271.4L445.5,272.2L444.9,274.5L445.3,277.8L446.3,279.1L444.5,279.3L444.2,283.7L442.7,286.5L441.4,289.6L438.5,295.4L437.4,299.3L433.1,307.4L428.6,313.2L425.2,317.1L420.6,320.2L418.2,322.3L414.6,325.9L408.4,333.6L406.5,337.1L405.9,337.9L403.9,338.6L402.8,341.1L401.1,341.8L400.6,344.5L399.5,346.1L397.9,350.4L396.8,351.4L395.1,357.1L395.2,359.3L397.8,363.1L396.8,365L397.4,367.4L396.8,369.4L398.1,373L398.6,376.5L401.3,379.1L401.9,380.1L400.9,383.3L401.4,389.6L401.1,393.5L401.2,398.7L401.9,399.9L400.7,403.2L398.7,405.6L397.5,407.8L394.2,410.4L390.3,411.7L386.5,414.1L382.5,419.2L379.7,421L376.6,424.1L375.8,424.2L375.4,427L376.5,428.9L377.4,433L377.6,436.8L378.2,435.3L378.2,439.3L377.1,443.3L377.8,443.5L376,446.9L373.7,448.3L368.5,450.4L366.1,452.2L365.2,454L366.1,455.3L366.6,454.4L366.1,458.1L364.2,464.6L363,466.6L360.9,468.1L359,470.3L354.2,478L348.1,484.4L343.8,488L340.6,490.3L338,491.4L336.3,491.2L334.8,492.6L332.3,492.5L331.6,493.4L326.8,492.5L325.5,493L322.7,492.6L321.5,492.9L319.6,494.4L316.7,494.4L314.6,494.8L312.6,496.4L311.1,496.2L309.1,494.3L308,494.3L308,493.1L306.2,493.5L306.7,492.1L306,489.8L304.6,486.9L306.2,486.1L306.6,483.5L306.3,481.7L304.3,478.2L302.6,473.8L301.8,470.4L299.9,466.6L299.9,466.6L297.1,463.5L295.7,460.7L294.4,455.5L294,452.6L294.1,449.3L292.8,445.3L292.6,439.3L293.1,438L292.4,435.6L291,433.5L289,429.4L287.9,425.9L285.2,419.8L283.7,418L282.5,415.4L282.4,411.8L282.7,409.1L282.5,404.9L283.4,404L284.8,399.2L286,393.4L287.8,390.2L289.6,389L291.2,385.6L291.5,382L288.9,375.5L288.1,372.3L289.6,370.6L289.7,369.1L287.6,363.6L287.4,362.3L286.2,360.5L285.3,358.2L288.5,357.1L285.7,357.6L284.9,356.6L284.1,352.9L283.2,350.8L280.5,347.7L277.3,343.4L274.8,341L272.9,338.1L271.8,335.2L273,336.8L273.9,336.6L272,335.2L271,332.3L272.9,330.6L272.9,327.5L275,328.7L275.8,328L274,327.5L273,326.3L274.3,326.2L274.1,324L273.3,323.5L275,319.7L275,317.9L275.6,314.2L274,310.7L274.7,310.4L271.7,309.3L271.3,307.1L269.9,307.2L269.8,306.1L268.6,305.3L268.7,307.1L266,307.2L265.6,306.6L263.4,307.8L259.5,308.4L257.5,306.6L256.7,303L254.5,300L252.7,298.5L251.5,298.2L245.6,298.4L241.1,299.1L239.3,299.7L238.3,301.1L235.5,301.3L231.1,303.9L227.6,305L226.1,306.1L221.5,304.5L221.6,304.3L221.9,304.3L221,303.3L220.5,304.3L217.7,303.8L211.3,304.5L206,306.5L203.1,308.1L200.2,306.9L196.6,304.7L191.9,299.8L189.8,298.7L189.5,297.9L186.8,295.8L185,294.5L182.7,293.5L182.7,292.2L181.1,291.2L180,289.5L179.5,285.5L178,282.7L177.9,281.3L174.9,279.8L173.5,276.5L172.4,276.4L172.3,275.5L170.9,275.1L170.8,271.6L169.2,272.5L168.7,271.5L167.1,271.1L165.6,269.6L165.4,266.2L165.2,264.9L166.3,265.1L170.9,264.2L168,264.4L167.1,264.9L166.3,263.7L164.7,259.8L163.9,258.6L162.4,258.1L164,257.3L166.6,252.9L167,249.2L168.7,244.7L168.8,240L168.3,237.6L167.1,235.9L168.1,233.9L168.5,231.7L167.6,229.7L166.8,229.8L165.9,227.6L165.1,229L165.4,226L165.8,223.7L168.2,220.3L168.9,217.9L170.6,214.8L170.2,214.3L173.8,210.9L174.6,209.3L174.9,206.8L176.6,202.7L180,200.3L181.7,195.9L182.7,194.7L186.6,193.6L188.8,192.4L190.2,190.8L192.7,189.1L196,184L196.1,182.4L195.3,181.1L195.6,177.7L197.5,174.5L198,172.1L200.6,169.2L207.4,165.4L209.6,161.5L211.3,156.6L213.8,156.1L213.6,156.8L215.5,159.1L217.5,159.7L220,159.1L221.9,159.3L222.8,158.5L223.3,159.8L225.7,159.9L226.9,160L230.1,157.7L232.7,156.3L234.6,156.1L236.4,154.4L239.3,153.1L244.4,152.7L245.9,151.8L249,151.3L252.8,151.3L255.4,152.4L259.5,150.4L261.2,151.2L262.3,150.4L265,151.5L267.6,151.1L271.9,149.2L273.8,149.8L274.7,152.1L277.2,150.5L277.5,151.4L275.2,154.1L275.6,156.2L277.2,157.4L277.7,159.3L275.6,162.6L273.8,164.2L274.2,166L276.4,167.6L277.9,167.4L278.4,168.9L279.6,169.2L282.7,170.8L284.5,171L286.6,170.5L290.4,171.6L291.5,172.4L294.1,173L294.9,174.1L295.6,176.6L296.4,177.7L298.1,178.5L303,179.3L306.4,180.8L309.5,183.2L310.9,183.2L312.5,182.2L314.1,179.4L313,175.8L314.6,172.8L317.2,171.2L319.4,170.4L321.6,170.5L325.2,171.9L326.1,173.9L329.5,174.9L331.7,174.8L333.1,175.5L333.7,176.6L334.6,177.3L336.6,176.7L342,177.9L345,179.3L347.2,179.5L349,180.4L350.8,180.1L354.5,177.5L356.8,177.5L357,176.9L358.9,177.5L360.3,177.1L360,178.3L361.3,179.3L362.2,178.5L363.3,179.4L368.4,178.9L369.5,178.2L370.5,176.9L371.2,175.4L372.3,169.7L373.9,164.1L375,162.2L374.5,159.4L373.6,157.7L374,156L373.4,154.1L374.7,152.4L374,151.2L371.7,152.9L368.5,151.8L365.3,154.7L361.9,155.4L360.2,154.7L358.6,153L355.9,151.8L353.1,151.4L352.4,154.4L349.7,154.9L347.5,153.7L347,152.3L344.1,151.7L341.6,152.4L343.7,150.7L340.3,150.7L340.9,150L339.6,148.9L338.9,147.5L339.4,146.1L335.7,144.7L336.4,143L336.8,144L338.7,144L337.3,142.6L338.2,141.7L336.7,139.8L337.2,138.5L334.5,139L334.5,136.4L336.5,134.5L338.5,134.2L339.3,134.9L345.3,134.4L344.8,133.4L348.1,132.9L346.3,132.5L345,131.6L345.9,130.5L348.2,130.9L349.8,130.7L351.6,131.2L353.3,131.1L354,130.1L357,128.1L360.9,126.8L366.1,127L367,126.5L368.3,128.1L371.2,128.4L371.9,129.6L373.2,130.4L374.2,129.9L375.4,130.7L380.6,132L384.4,131.1L387.7,131.8L390.2,130.6L392,129.1L392.7,127L391.1,123.7L388.4,121.8L387.1,121.5L384.9,120.1L379.5,116L377.4,115.3L376,114L374.3,113.8L373.3,112.7L371.2,112L372.1,111.2L374.7,110.8L374.6,109.5L375.3,107.8L377.3,107.4L374.2,104.9L376.9,104.7L376.6,104L379.5,102.7L379,101.9L375.5,102.7L373,102.8L372.4,103.5L368.7,104.7L367,104.9L365.2,106.5L365,105.8L363.7,107L364.6,109.1L367,111.1L369.6,110.4L370.7,110.7L370.2,112.3L368.3,112.6L367.1,112L365.5,113.5L364.2,113.5L361.4,115.5L359.6,114.7L359.6,112.1L357.1,110.9L355.5,110.7L359.5,108.1L359.1,107.4L357.6,107L355,107.5L352.2,106.3L353,105.8L351.3,105.2L354.3,105.6L355,105L351.1,104.7L348.5,105.3L347.7,107.4L346.7,108.5L344.5,109.4L345.2,111.3L344.9,113.3L343,113.7L342.6,112.6L341.7,115.9L341.8,118.5L341.5,120.2L340.3,120.2L339.6,121.2L339.7,123.3L338.3,124.6L340.6,127L342.1,129.4L344.9,130.5L344,131.7L341.6,131.2L339.1,131.7L338.3,133.1L336.5,134L334.6,136L334.6,134.9L336.6,133.4L333.9,133.5L333.6,132.9L332.9,132.4L330,131.6L328.8,132.3L327.6,131.9L326.2,132.9L325,132.8L325.5,134.4L324.8,135.3L323.4,135.4L320.7,134L320.8,136.2L323.7,139.8L322,140L322.6,141L321.2,141.7L323.8,142.8L326.7,144.7L327.3,147.4L325.3,145.9L323.3,146.6L325.2,148.7L324,149.2L322.2,148.2L323.4,150.7L323.6,153.1L322.7,151.8L321.2,153.1L319.9,150.7L319.3,152.1L317.9,150.4L317.7,148.2L316,146.7L316.9,145.1L318.4,144.4L322.8,146.2L323.6,145.2L320.7,143.9L317.1,144.5L315.7,144.1L314.2,141.2L312.2,139.6L311,137.8L310.3,136.2L308.8,135.4L308.1,133.2L308.5,131.9L308.3,129.6L308.7,127.8L307.7,127.5L305.9,125.6L304.4,124.8L301.1,122.6L300.7,122.4L298,120.2L296,119.5L294.5,119.6L291.1,116.1L292.4,116L290.1,114L289.8,112.2L287.7,111L286.6,113.4L285.2,112.1L284.9,110.1L285.5,109.8L285.1,108.9L280.1,110.5L280,111.4L281.2,112.7L280.2,113.9L280.9,116.3L282,117.3L285.2,119.2L287.3,123.6L290.7,126.6L291.9,127.2L294.9,127.1L295.7,128L295.2,129.5L299.5,131.3L302.8,133.3L305,135.9L304.6,137.3L303.5,136.7L302.6,135.1L301.1,134.9L299.9,134L299,134.2L297.6,137.1L298,138.1L300,139.4L300.3,141.2L298.1,142.6L298.1,144L296.3,146.3L295,146.3L295.8,142.6L296.7,142.4L295.8,139.5L294.4,136.4L291.5,135.3L290.7,133.2L288.1,132.4L286.6,130.5L284.2,130.4L282.4,129.4L278.4,125.5L277.1,124.8L274.8,122.4L272.1,117.2L269.2,115.8L267.2,115.3L264.7,117.7L262.5,118.4L262.3,118.5L262.1,118.6L258.8,121.3L257.4,121.7L254.7,121L253.4,120L251.8,120.2L249.6,119.2L246.7,121.2L245.9,122.5L246.5,124.8L246.7,127.1L242.3,130.2L238.3,131.3L234.1,137L233.1,138.7L233.6,140.9L235.1,142.4L232.9,143.9L231.9,145.3L231.2,148L229.3,148.1L227.4,149.7L225.9,152L217.4,152.2L216.2,153.2L214.3,153.6L212.5,155.5L210.9,154.7L209.2,151L207.7,149.9L205.7,149.9L204,150.8L201.1,150.2L199.5,150.6L200.3,148.7L200.2,143.9L198.9,143.8L199.3,142.4L198,142.5L198.4,139.6L199.3,138.6L200.4,135.5L201.4,131.5L200.7,127.6L201.1,127.1L201.5,125.5L200.7,123L199.5,122.2L201,120.5L203.3,120L203.3,119.3L205.5,118.4L207.1,119.2L213.1,119.3L217.4,120.1L220.8,119.6L222.9,120.3L223.6,119.9L225.6,120.5L227.6,120.1L228.8,119.4L229.7,114.7L230.4,110.1L231.5,111.1L230.5,109.1L230.1,106.4L227.8,105.4L226.3,102.4L227.1,101.7L225.1,101.7L225.4,100.9L220,99.2L218.5,99.3L217.2,98.3L218.5,97.7L217.1,96.8L217.1,95.9L222.6,94.5L224.5,95.9L225.4,95.4L229.3,95.4L228.7,94.7L228.6,92.8L227.6,90.6L229.8,90.6L230.2,92L233.8,92.4L235.9,91.7L235.1,90.5L238.9,89.1L240.2,88L240.1,85.7L241.3,84.5L243.5,84.1L246.4,82.8L249.6,82.7L246.8,82L249.4,81.7L248.6,80.8L250.4,78.5L251.1,76.2L253.5,74.9L254.1,74.1L255.9,73.4L258.6,73.3L260,74L259.5,73.6L260.2,72.2L262.8,72.2L263.7,73.3L264.6,73L264.9,71.3L266.2,71.1L265.9,69.6L264.9,68.9L266,68.3L264.9,66.6L264.6,64.3L262.9,63.5L262.8,59L264.6,59.5L266.5,57.2L265.6,57.2L264.9,58.5L263.8,58.7L263.2,57.9L264.3,56.7L267.5,56.2L268.8,54.6L270.7,54L270.8,56.1L270.1,57.2L270.2,58.9L272.1,59.4L272.2,60.4L270.4,60.8L270,62.3L268,64L268.4,65L267.6,66L268.7,67L270.2,68.5L272.3,69.3L273.3,69L273.1,70.8L274.8,71L277.2,70L278.8,68.6L280.4,68.9L282,70.1L283,70L283.5,71.4L285,72L284.8,71.3L283.8,71.3L283.3,70.2L284.7,71L291.6,69.4L292.8,68.2L295.2,67.4L298.9,66.9L300.3,68.8L301.5,69.2L303.6,68.7L304.7,66.6L306.6,66.2L307.8,64.9L308,65L306.9,66.3L309,66.5L309,65L307.9,61.4L307.6,58L308.5,57.1L309.5,54.7L312.3,54L314.5,55.8L315.1,56.8L316.5,57.4L318.5,56.5L318.9,55.8L318.3,53.4L318.7,51.2L317.3,51.6L316.1,51.2L314.6,48.7L314.6,47.5L316.6,47.1L317.5,46.3L321.1,46.1L321.2,45.5L325.1,45.9L326.3,46.4L329.5,46.5L329.9,46.2L329.7,45.2L331.3,44.6L332.8,44.7L333.3,44L336.7,44.5L335.1,43.1L332.9,43.1L331.3,42.3L330.7,41L328.4,41.6L326.5,41.6L321.3,42.5L319.7,43.1L312.4,44.7L313.1,43.9L311.9,43L310.6,43.8L310.8,42.3L306.8,41.4L306.4,39.7L306.8,37L305.4,35.3L305.6,34.3L304.6,32.6L306.2,30.8L305.7,30.1L308.2,29.7L308.7,28.2L310.9,27.2L313.9,24.5L314.6,23.3L317,23.1L316.7,20.5L314.1,19.3L312.6,19.1L309.3,19.4L308,18.8L306.8,19L306.6,20L304.5,20.8L304.7,21.8L303.4,23.3L304.9,24.8L303.4,26L302.7,27.3L298.3,28.9L297.4,30L296,30.2L295.7,31.4L293.8,31.7L294.4,32.7L292.9,33.3L292.8,34.6L292,36.5L292.6,40.9L294.1,41.6L295.1,41.4L298.1,43.6L298.9,45L296.5,46.5L297.5,46.6L296.9,47.9L292,50.2L292.1,51.8L291.5,53.6L292,55L291.7,56.9L290.2,60.7L285.8,61.1L284.1,62.5L284.7,63.8L284.1,64.4L281.2,64.6L279.6,64.4L279.7,62.6L278,60.4L279.2,58.9L277.5,57.6L274.9,54L273.1,50.7L272.6,48L273.3,48.2L271.4,47.5L270.4,45.8L269.2,48.3L267.5,48.3L263.7,51.4L262.5,52.1L260.1,52.7L256.9,52.2L254,50.5L253.3,49.6L253.6,48.3L255.3,48.9L254.5,48.1L254.7,47L255.8,46L252.7,47.6L251.9,47.4L252.4,45.5L254,45.5L255.5,44.7L253.9,44.6L255.2,42.9L256.4,42.2L256.5,43.3L257.4,41.8L255.2,42.5L253.1,44.7L251.8,45.4L252.1,41.5L251.3,39.4L254.5,39.1L258.1,39.2L259.8,38.8L256.8,38.7L252.3,39.1L251.2,37.7L252.3,37.5L250.9,36.5L251.1,35.7L254.9,35.9L251.6,35.5L251.5,34.6L255.3,32.8L256.8,32.5L260,32.8L261.1,32L256.9,32.3L257.6,31.2L259.5,30.6L261.2,30.6L262.8,29.6L262.1,28.7L263.6,28.2L266.4,28.3L267.4,29.3L269.9,29L269.8,28.3L271.8,27.5L271.6,26.5L270.3,27.1L270.4,27.7L267.1,28.8L266.1,27.6L269,24.9L272.1,23.6L271.9,22.6L274,21.7L274.4,19.8L275.9,18.5L275.7,17.9L278.5,17.5L279.5,17L276.7,17.3L276.9,15.6L279.6,13.6L283.8,13.1L280.6,12.9L282.1,11.8L283.8,12.3L283.1,11L281.5,11.3L282.2,10.2L285.2,9.1L286.1,10.5L286.4,9.6L285.7,8.8L286.3,8.4L290,8.2L286.9,8.1L287,7.4L289.3,6.7L290.1,5.5L291.3,5.3L291.8,4L292.8,4.1L294.4,2.9L296.1,2.7L296,4.2L297.1,2.3L298.1,2.4L297.9,3.7L298.6,3.7L298.8,2.2L300.5,2.3L301.3,1.8L303,2.6L302.7,1.8L300.9,0.9L302.2,0.9L304.9,0.3L307,1.9L307.2,0.9L310.1,-1L309.5,-1.5L311,-2.2L312.6,-1.5L314.2,-1.6L312.9,-0.4L312.5,1.4L316.4,-1.8L317.2,-1.6L317,0.2L318.2,-0.2L318.6,-1.1L319.7,-1.5L318.6,-1.9L319.6,-2.5L322.2,-2.1L322,0.7L323,-1.2L324.5,-1.6L328.2,-0.3L329.4,-0.3L330.7,0.8L327.7,1.5L324.1,1.3L326.8,1.9L327.1,2.7L328.7,2.5L330.9,2.7L332.8,3.1L334.5,2.5L334.2,2L337.4,2.9L337.7,3.4L335.1,3.2L335.9,4L339.1,4.1L339.2,5.3L340.2,4.6L344,5L345.3,4.8L347.1,5.1L353.6,7.2L356.1,8.5L357.4,8.7L360.1,9.7L360.5,9.3L362.9,10.7L364.9,11.2L366,13L366.8,13.3L366.7,14.8L364.9,16.4L361.3,17.7L358.5,18L354.8,17.3L348.8,16.6L346.4,15.7L342,15.1L339.7,14L339.9,13.8L336.5,13.5L341.3,16.1L342.8,16.4L342,16.9L344.5,17.3L347,18.9L346.2,20.8L347.9,22.5L348.5,24.3L350.6,25.2L351.3,25.1L354,26.7L357.7,27.5L359.6,26.6L358.9,25.4L356.3,25L353.7,23.1L354.5,21.8L356.7,22L358.5,23L364.5,24.3L365.3,23.5L366.6,23.4L363.8,21L363.6,20L366,18.4L368.4,17.8L370.3,16.1L373.7,16.6L377,18.3L376.7,17.3L377.4,15.5L376.3,13.7L374.8,13.3L374.5,12.3L374.9,10L374.4,8.7L371.6,7.5L373.7,7.8L376.9,7.6L379.6,8L382.8,10.1L383,10.6L379.4,11L377.9,12.2L378,12.7L380.2,13.4L382,14.7L383.7,15L387.2,14.2L387.1,11.7L390.1,11.1L389.3,10.5L390.8,10.5L395.5,8.6L398.8,7.8L400.2,8.6L401.2,8L399.8,7.5L403.8,5.9L404.3,7.4L405.1,8.2L403.3,8.9L407.4,8.9L409.6,7.7L411.5,7.3L415,7.7L417.8,6.4L420.4,5.9L421.8,7L421.5,8.2L423.2,8.6L424,8.3L423.5,7.1L425.4,7L426.3,6L425.3,5.5L422.9,3.5L425.1,2.5L427.6,2.8L432.7,3.2L435.6,3.7L438.7,4.8L443.7,6.1L445.7,6.4L448.7,7.9L451.1,8.7L452,7.7L452.3,6.1L450.3,6L448.5,4.9L447.6,4L444.3,3.1L443.5,3.2L443.5,1L442.9,-1.1L441.4,-1.3L440.3,-2.5L440.7,-3.3L442.4,-3.8L444.1,-4.9L444.5,-6.2L444.4,-8.8L444.9,-9.9L445.8,-9.7L451.4,-9.7L455.9,-8.8L456.6,-6.4L456.4,-4.9L455.6,-4L458.5,-2.8L459.6,-1.4L460.3,0L460,0.7L461.4,2.7L462.7,5.6L463.6,6.4L466.9,7.6L466.5,9.3L467.2,10.6L465.9,11.7L464.7,14.1L463.3,14.3L464.3,15.1L462.1,16.1L458.7,14.8L456.1,15L457.1,15.9L461.2,16.9L463.8,16.8L466.5,17.3L467.6,16.9L467.5,16L470.4,14.7L471,14.1L471,12.4L472.5,11L471.8,9.7L469.9,8.3L469.8,6.9L471.3,6.5L475.3,6L478.8,8.1L480.2,10.9L482.2,11.7L486.1,11.7L481.5,11L480.8,9.2L481.7,8.9L479.2,6.3L473.3,4.9L471.4,4.9L469.8,5.5L467.2,5.4L466.2,4.2L464.6,3L464.4,1.2L465.2,-0.5L461.1,-3.2L459.4,-3.9L460.3,-5.5L463.7,-6.7L463.4,-7.8L461.6,-9.3L463.4,-9.3L465.7,-7.3L465.2,-5.4L466.4,-4.8L466.5,-3.5L469.2,-3L473.9,-2.8L475.8,-2.1L477.4,-2.1L475.6,-3.2L473.2,-3.4L469,-4.5L467.4,-5.8L468.4,-6.2L470.4,-6.1L472.2,-5.5L474.1,-5.9L473.1,-6.5L471.5,-6.4L471.2,-6.9L473.8,-7.7L476.7,-7.6L481.5,-6.5L484.6,-5.1L489.1,-5.1L490.1,-4.8L489.7,-3.8L488.3,-3.2L489.8,-0.3L490,-1.7L491.3,-1.7L492.2,0.2L491.9,1L493.4,1.5L493,0.7L494.1,0.5L494.4,-0.3L491.2,-2.6L491.3,-4.5L489.5,-5.6L487.7,-5.8L485.5,-7.1L482.4,-7.5L480.7,-8.1L479.7,-8.9L479.7,-9.9L478.3,-10.4L477.3,-11.4L477.4,-12.3L480.9,-12.6L486,-12.6L489.4,-13L491.6,-12.9L491.9,-13.3L494.6,-13.5L496.1,-13.3L493.4,-12L496.9,-12.5L497.8,-13.2L496.5,-13.5L493.6,-14.9L491.7,-15.1L492,-15.6L495.3,-15.3L492.3,-16.2L490.2,-16.4L491,-17.1L492.7,-16.6L494.3,-17.5L492.5,-18L492.9,-18.5L494.5,-18.3L498.4,-19.5L500.7,-20L500.7,-20L567.8,-20ZM-20,33.5L-18.4,33.9L-16.8,33.9L-14.9,34.8L-14.7,34.4L-11.3,33.3L-8.3,35.1L-7.1,37L-5.8,36.9L-6.9,37.7L-5.9,38.9L-2.3,39.3L-2,40.1L0.4,39.6L0.1,40.4L-1.7,42L-2,43.6L-5.4,44L-2.7,44.2L-2.4,45.4L-3.4,46.8L-2.4,46.9L-3.7,48.9L-4.3,48.6L-6,49.4L-4.9,49.7L-2.8,48.9L-0.8,48.8L0,49.3L0,51L1.6,51L1.2,52.8L1.9,51.8L5.8,50.3L7.3,49.3L8.2,50.2L8.2,49.1L10.2,47.9L12,44.9L14.4,42.9L15.3,42.5L16.2,43.7L17.2,46.1L16.2,46.6L17.6,46.9L17.3,47.8L18.8,49.8L16.7,50.8L19.4,50.6L17.5,52.4L19.3,52.1L20.9,53.4L20.3,54.5L18.3,55.2L20.3,55.5L19.7,56.1L21.5,57.2L20.9,58.7L18.5,58.6L19.4,59.3L18.3,59.7L20.2,60.1L19.6,61.7L21,62.3L21.7,61.9L23.2,62.7L23.3,64L21.2,65.9L24.5,64.8L27,65.5L27.3,66.9L28.6,67.2L30.2,66.8L31.8,68.2L30.5,69L28.9,69.2L26.7,70.5L23.4,71.5L22.2,71.5L20.8,72.6L19.6,74.1L23.7,72.4L26.6,70.8L28.7,70.3L28.5,69.7L31.2,70L31.6,71.8L30.2,72.4L30.6,73.2L32.7,71.9L34,71.8L35.1,72.6L35.7,74.3L34.9,76.9L33,77.4L34.6,77.6L34.7,79.3L29.2,82.4L26.3,82.5L23.8,83.1L18.5,86.8L16.5,88L12,88.2L10.3,88.7L9.8,88L7,87.7L5,88L3.3,87.7L-0.9,87.9L-2.2,87.6L-6.9,88.2L-8.8,89.2L-11.3,92.2L-13.9,92.6L-17.7,94.6L-20,96.4L-20,33.5ZM-20,98.2L-18.7,97.2L-15.5,95.5L-12.7,94.5L-7.1,92.8L-4.7,92.5L-2.3,92.9L-0.5,94.2L-1.5,96.5L-5.4,98.4L-7.6,97.6L-9.6,98.1L-7.4,99.1L-6.7,99.9L-4.7,99.2L-3.7,99.7L-5,101.4L-6.8,102.7L-5.1,102.9L-5.6,103.7L-5.1,106.7L-2.9,107.1L-3.6,107.8L-1.1,109L1.1,109.1L1.8,109.6L4.1,108.5L5.6,109.3L6.8,111.2L-2.5,114.3L-3.5,114.1L-4.4,115L-5.1,114.3L-9.2,117.9L-12.9,119.4L-14,118.2L-13.3,115.6L-11.1,113.7L-7.8,112L-5.5,111.1L-5.8,111.9L-1.8,110.9L-4.4,110.6L-7.6,110.8L-4.8,108.6L-11.4,111.5L-15.3,112.3L-16.1,111.8L-17,114.1L-19.5,114.6L-20,115L-20,98.2ZM-20,281.4L-19.8,281.5L-16.6,284L-17.8,285.3L-18.7,287.7L-20,287.7L-20,281.4ZM-20,287.8L-18.9,288.6L-16.8,287.7L-13.6,287.9L-10.3,290.2L-7.4,293.8L-8.1,297.7L-7.3,296.1L-5.5,296.4L-3.7,298.6L-2.4,299.3L-2.4,302.3L-2.4,302.3L-1.4,300.2L2.8,301.1L3.3,300.3L7.4,300.2L10.6,301.1L10.2,303.2L11.5,301.2L13.1,302.2L15.4,302.9L18.8,306.3L19.9,307L20.4,309.4L20.9,308.3L22.2,309.3L22.8,313.2L24.3,318.5L25.2,320.1L27.3,321L27.5,323.3L25.9,324.9L23.7,328.1L21.8,329.3L20,332.6L20,333.8L18.7,335.6L16.1,336.4L19.1,336.5L23.4,333.4L24.3,337.4L25.5,338.6L27.1,337.7L28.3,338.2L30,337.2L29.1,341.4L30.4,338.1L32.5,336.1L33.5,336.7L33.5,334.4L34.9,332.5L37.9,331.9L40.3,332.7L41.1,333.6L42.8,333.9L45.9,335.4L46.5,337.2L47.5,336L49.3,337.3L50.2,339.3L49.1,344L50.2,343L50.8,341.1L51.6,340.9L51.2,342.4L52.3,341.3L54.6,340.3L56.4,340.7L59.3,342.3L60.8,342.1L63.2,343L66.7,342.3L68.8,342.7L75,346.8L76.8,349.1L80.4,352.5L82.9,353.4L85.4,353.2L87.2,353.5L88.5,355.6L89.6,359.6L90.4,363.9L90.4,367.2L89.2,371.8L84.3,379.2L82.1,380.8L80.2,384.1L79.2,387L77.1,390.6L76,391.1L75.2,389.5L74.5,390.3L74.7,392L73.7,394.2L74.2,396.6L74.1,399.3L75.1,405.1L74.1,412.1L74.4,413.9L73.2,415.3L72.3,418.5L72.7,421.5L71.6,423.8L70.2,427.8L68.7,429.4L67.9,432.3L68.3,434.3L67.8,435.1L65.5,436.2L64.5,437.5L64.4,439.2L60.7,439.3L60.1,438.1L59.6,439.4L57,439L53.9,439.7L54.3,440.8L52.8,441.3L50.9,443.3L48.9,443.3L45.5,445.4L41.7,449.1L40.6,451.1L39.7,450.4L38.7,451.5L39.9,452L39.5,453.1L39.4,457.4L40.1,459.7L40.3,464L39.9,466.4L38.2,467.8L36.6,470.2L35.7,472.3L35,475.3L34.1,477.6L32.3,480.4L29.2,483.5L29,482.1L30.4,481.9L32.2,479.8L32.1,478.7L33.7,476.7L33.5,474.4L32.5,475.1L31.4,474.3L31.3,476.9L30.8,478.4L29,480L28.5,482.4L28.9,483.8L28.3,485.1L27.6,488.4L25.2,491.4L24,494.4L22.8,495.8L20.1,497.1L17,496.3L15.3,497L12.3,495.9L10.8,494.8L8.3,494.9L5.6,492.2L5.2,488.7L6,487.3L5.2,485.2L5.7,487.6L4.9,488.3L4.8,491L5.9,493.5L5.4,494L6.7,495.9L10.9,498.3L11.8,499.9L11.2,500.9L11.9,502.9L14.3,504.3L14.8,506.3L13.7,509.2L12.8,510.6L12.5,512.3L10.4,514L4.4,515.9L-0.3,516.6L-2.2,516.7L-5.3,516L-4.6,517.8L-3.6,518.5L-3.4,520.6L-3.9,521L-3.7,523.7L-3,524.7L-3.3,525.7L-5.2,526.8L-8.3,527L-12.7,525.4L-13.7,525.7L-12.5,528.9L-12.2,530.9L-9.8,532.3L-9.9,533L-8.1,532.9L-8.8,532.1L-7.3,531.6L-6.2,533L-6.1,534.9L-7.7,535.1L-8.7,533.8L-10,533.6L-11.2,534.6L-8.3,535.6L-10.4,537.2L-11.1,538.8L-10.4,540.8L-10.3,542.8L-11.2,543.7L-10.7,545.3L-12.8,545.1L-15.3,546.5L-16.6,549.9L-16.2,551.6L-12.3,554.7L-9.4,555.1L-8.1,556.3L-8.1,558.6L-7.5,559.1L-9.1,561L-11.1,562.3L-12.6,565.2L-12,568.1L-13.4,569.2L-15.4,567.6L-13.9,569.5L-15.5,570.5L-15.5,573.3L-14.1,575.9L-10.6,579.4L-10.7,579.6L-13.8,578.9L-14.6,580L-20,580ZM918.6,400.1L918.5,401.7L919.8,400.6L919.8,403.3L918.1,404L917.5,402.9L917.7,400.2ZM22.2,574.6L25.5,575.1L26.4,576.6L23.7,577.7L24,578.4L22,578L22.7,578.8L21.7,579.4L20.5,578.6L20.5,577.6L22,576.5ZM17.3,575.5L20.4,575L20.9,575.3L19.3,577.8L16.9,578.8L15.7,578.2L17.9,576.9ZM224.8,81.6L222.5,82.7L219.7,81.5L217.9,81.1L216.8,81.6L215.5,80.4L218.7,79L220.1,77.4L219.7,75.7L217.7,76.2L219.7,74.3L223.1,73.5L224,72L224.2,69.9L223.2,70.2L221.8,68.6L222.3,66.4L220.4,67.2L218.5,67.3L216.3,66.9L218,64L217.3,63.1L217.5,61.5L215.6,62.5L214.9,64.5L214.1,64.4L214.8,61.5L216.3,58.3L214.7,59.3L213.1,58.5L215.1,56.2L214.3,55.5L215.1,54.8L215,53.3L216.6,53.3L216,51.7L217.2,51.6L217,50.5L218.2,50.5L223.9,50L223.3,51.4L220.6,53L221.1,53.6L220.1,54.7L222.6,54.1L227.2,54.1L228.2,55L226.5,57.8L225.4,59.2L223.2,60L225.1,60.3L222.6,61.6L225.3,61.6L226.9,62.1L228.6,63.6L229.8,67.2L232,68.5L234.1,70.2L233.6,70.6L235.6,74.6L234.5,75.7L235.4,76.2L236.4,75.5L238.1,75.5L240.3,76.4L240.6,77.7L240,79.5L239,80.6L237.1,81.1L236.9,82.7L239.5,82.8L239.4,83.7L235.1,85.6L231.5,85.6L229.3,85L228.9,85.7L227,85.8L227,86.3L223.5,85.8L222.1,86.2L220.6,88.1L219.3,87.3L217.2,87.8L215.4,89L215,88L217.8,85.5L219.3,83.6L223.1,83.5ZM209,65.8L211.6,65.1L212.8,65.2L214.7,67.7L214.6,69.5L213.1,70.5L212.4,70.3L211.9,70.8L212.6,72.7L212.9,75.6L211.7,78.8L207.4,79.4L206.9,80L202.7,81.8L199,82.3L199.9,81.3L198,81.7L199.4,80.7L197.1,80.5L198.7,79.3L197.1,79.3L199.9,77.4L198.9,77.3L200.4,76.3L201.2,74.9L202.6,74.4L200.7,74.2L198.4,72.8L199.2,72L199.5,70.3L198.8,69.6L201.4,69.4L204.2,69.6L203.9,69.2L205.7,67.8L203.5,67.7L204.9,66.7L205.3,65.5L207.9,65.3L208.9,64.6L209.9,65.1ZM-20,280L-19.3,279.7L-19.9,277.5L-16.8,276.9L-17.3,277.7L-17.4,280.3L-17.4,280.3L-20,280.5L-20,280ZM748.3,373L750.4,371.8L751.5,370.4L754.2,369.7L757.6,369.5L759.1,368.8L760.4,369.3L758.7,370.7L756.4,371.9L752.2,373.4L750.7,374.6L747.8,377.6L745.3,378.6L744.5,378.4L745,375.1L746.5,373.7ZM724,220.2L724.1,223.6L722.6,221.5L721.3,220.6L719.6,217.7L719.3,215.2L720.4,211.2L721.4,208.6L723.3,207.4L725,208.9L724.9,212.9L725,217.5ZM300.2,53.5L299.4,54.1L299.8,55.5L297.4,57.6L297.1,54.7L298.3,53.5ZM564.5,281.8L565.6,281.9L567.6,284L570.6,288.5L571,290L573,294L573,295.8L572.2,298.1L568.5,300.2L566.6,300.1L565.9,299.4L564.7,296.2L563.8,290.2L564.2,290.3L565,285.3ZM894,373.4L894.8,374.2L896.4,374.1L898.1,376.3L894.1,375.9L893.3,374.7ZM898.7,368.8L900,371.9L900.3,374.9L898.7,372.9L898,368.9ZM420.9,-20L416.1,-19L413.4,-17.6L414.3,-17.4L412.2,-16.3L411,-16.6L410.9,-15.9L409.2,-15.9L410,-15L409.6,-14.4L407.8,-14L408.4,-13.2L406.7,-13.2L407.7,-12.6L406.5,-11.5L405,-11.2L400.4,-11.8L398.5,-11.4L397.9,-12.2L396.2,-13L398.5,-13.8L399.8,-15.5L401.9,-15.8L400.2,-16.3L402.3,-17.6L400.8,-17.8L400.5,-18.5L402.3,-18.1L402.6,-19.1L404.9,-19.1L405.5,-20L420.9,-20ZM401.6,-11.3L405.2,-10.8L404.8,-9.2L403.8,-9.1L403.1,-8L404,-7L403.8,-5.9L407.1,-3.5L410.4,-1.9L413,-1.1L411.8,-0.5L408.8,-1L409.9,-0.5L407.1,-0.9L403.7,-0.9L399.6,-1.7L400,-2.4L401.6,-2.7L398.6,-3.7L398.5,-4.3L393.8,-4.1L392.2,-5.2L392.2,-6.4L394.2,-6.6L395.1,-7.5L395.4,-8.8L394.1,-9L394.7,-9.6L396.4,-9.7L395.8,-10.9L399.9,-11.6ZM663.2,-20L663.3,-20L662.7,-19.1L663.6,-18.8L662.1,-17.9L659.2,-18.2L656.9,-19L656.4,-20L663.2,-20ZM654,-20L654.7,-19.5L657.5,-18.3L659.8,-17.6L658.5,-17.1L656.3,-17.7L651.8,-17.2L649.4,-17.6L649.2,-16.5L645.5,-17L641.5,-18.2L639.8,-19.1L640.8,-19.1L639.7,-20L654,-20ZM668.8,-19.2L670.4,-19.4L673.5,-19.3L674.3,-18.8L679.3,-18.6L682.2,-17.5L679.9,-16.9L675.2,-17.1L667.7,-18.5L666.9,-19.9ZM738.8,69L740.4,70.1L741.4,71.7L744.5,74.3L746.7,77.1L747.8,79.5L750.9,82.3L755.9,87.8L760.6,92.3L763.4,94.6L760.4,92.8L758.6,92.3L756.7,92.9L758.1,98.1L759,99.7L762.2,102.1L764.2,104.1L765.3,104.3L766.8,106.2L767.1,107.7L765.1,105.2L762.1,104.6L761.8,105.2L762.4,108.3L760,105.7L758.8,102.5L757.3,100.4L756.8,98.4L753.5,95L752,91.1L748.9,86.7L747.8,84.5L746.1,82.5L743.8,81.1L741.8,78.6L741.5,77.3L739,73.8L739.6,73L741.1,73.3L740.3,71.2L737.7,69.5ZM791,-2.1L790.7,-2.1L788.1,-1.4L786.4,-2.3L786.3,-3.1L787.8,-4.2L788.1,-4.3L791,-2.1ZM392.4,5.2L390.9,6.5L388,7L386.4,5.7L386.4,4.5L388.7,3.8ZM661.7,-13.5L666.6,-12.3L668.5,-11L667.7,-10.9L662.5,-11.3L659,-11.8L657.5,-11.5L656.2,-11.7L658,-11.9L658.5,-13.4ZM448.5,-10.4L446.2,-10.4L446.2,-11.8L448.4,-12.1L450.9,-11.2L451.2,-10.7ZM423.2,2.1L423.5,3L420.8,2.9L420.3,2.4L418.6,2.3L416.4,0.8L417.7,0ZM728.3,239.5L731.6,241.1L733.4,240.5L733.4,244.1L735.4,246.7L734.5,251.2L732.5,252.4L732.8,253.7L732.1,255.4L733.8,258.2L734.5,260.9L735.9,262L737.3,260.2L738.9,260.5L740.8,262.9L740.9,261.4L743.3,262.7L742.1,263.4L743.5,266L745,266.4L744.9,268.6L744.1,266.8L741.5,266.3L740.7,264.4L738.1,262.2L737.5,262.3L738.8,265.3L736,262.7L734.7,262L732.5,263.5L730.9,262.3L730.1,262.7L729.7,260.8L730.8,258.6L729.1,257.5L729.4,259.4L728.8,259.5L727.1,257.6L725,250.5L726.6,251.9L727.4,251L726.8,249.6L726.9,247.5L726.1,244.2L726.4,240ZM719.1,288.4L719.2,287.1L721.7,284.5L725.4,279.2L726.1,278.7L726.1,276.9L726.8,274.5L728,278.3L726.2,280.7L724.6,281.3L723.4,284.5L721.7,286.3ZM739,273.2L741.8,273.6L741.7,275.2L740.6,277L737.5,278.7L737.2,276.8L737.4,273.1L736.7,271.8ZM742.9,285.4L740.4,283.4L739.8,281.1L741.3,280.5L740.9,278.5L741.4,276.7L742.5,276.2L743.9,277.2L742.7,281.6L743.6,284.4ZM747.7,274.5L749.2,274.4L749.9,277.2L751.1,279.7L750,279.2L750.3,280.8L749.2,280.1L749,277.7L748.3,276.3L747.4,276.5L746.6,273.6ZM749.8,268.8L751.2,270.4L751.4,273.3L752.5,275.4L750.6,275.4L748.8,272.4L746.8,270.6L745.9,268.6ZM730.6,264.2L732.6,264.5L734.1,265.9L734.5,268.3L733.5,270.3L732.3,269.2L731.1,266.7L729.3,264ZM754.7,284.2L755.5,284.4L756.2,286.5L755.5,287.5L756.5,288.2L757.9,294.2L756.4,296.1L756.6,298.7L754.7,293.7L753.1,296.3L754,297.9L754.5,300.2L753,301.9L752.8,300L751.9,300.8L748.4,299L747.3,296L748,293.4L746.9,292.2L744.9,291.5L744.6,293.4L743.3,292L740.8,292.1L739.6,295.6L738.9,295.5L739.3,291.5L740,290.4L742.4,289.8L744.3,287.2L746.1,288.5L745.9,290.3L747.7,289.4L748.6,287.6L749.7,287.8L750.1,285.9L751.3,286.4L752.7,285.7L752.1,282.5L752.5,282.1ZM743.7,283.6L743.5,281.1L744.6,278.7L745.6,274.8L746,278.1L744.8,280.3ZM867.9,351.7L866.8,350.5L866.5,348.1L865,345.7L859.4,341.9L859.5,341.3L864.9,345.3L868.3,348.6L868.7,349.8ZM863.6,349.5L865.7,349.7L865.5,351.6L863.9,352.9L864.3,354.6L863.1,355.6L861.6,355.6L860.3,357.3L856.9,359L853.7,359.1L851.5,358.3L848.7,356.6L848.5,355.5L851.2,355.2L852.2,355.7L855.8,355L856.6,355.5L859.3,354.9L861,352.7L862.5,352.3L862.3,349.1ZM818.6,341.4L819.5,341.5L823.7,343.7L826.5,344.9L829,345.4L831,347.1L833.1,347.4L835.3,349.8L836.4,350L838,352.1L837.8,354.8L840.4,355.9L843,357.3L844.4,357.5L846,359.2L845.9,361.1L843,361.2L842.3,362.2L843,364.3L845,366.7L846.6,367.8L846.9,370L848,372.3L850.8,372.4L850.4,374.1L851.4,374.9L853.4,375.3L852.5,376L852.8,377L856,378.1L855.7,379.4L854.3,380.1L852.1,378.6L844.1,377.2L841.4,374L841.3,372.4L840.2,372.2L838,367.7L833.7,366.4L831.9,365.2L830.6,366.2L829.3,365.7L829.4,367L827.8,367.2L827.9,368.3L825.7,368.8L824.1,368.6L825.7,369.6L826.5,371.9L823.4,373.7L821.7,372.9L817.2,373.2L816.6,372.7L812.7,367.8L810.4,368.2L808.3,368L809.5,365.3L808.2,363.7L809.5,363.5L807.7,362.2L808.8,361.8L807.2,359.4L805.9,355.1L802.1,352.5L800.2,352L797.6,350.7L794.3,350.3L792.6,349L792.4,347.9L789.4,347.2L788.2,345.1L786.4,348.4L785.2,348.6L784.4,346.7L784.5,344.7L781.3,342.3L782.4,341.8L784.4,342.3L786.4,340.6L788.1,341.1L789.4,340.4L789.5,339L785.5,339.8L782.8,339.7L781.6,338.5L781.3,336.4L778.6,335.6L777.4,335.8L778.5,333L780.8,332.3L782.1,331.1L784.2,330.6L787.7,332.4L789.8,332.5L790.9,335.5L790.3,337.2L790.4,339.5L791.6,342.5L792.3,341.1L793.9,344.9L795.8,345L799,341.3L799.7,339.8L802.9,338.6L802.8,337.8L805.6,336L809.1,337.5L813.8,340.2L817.2,340.7ZM879.6,361L878.5,361.9L877,361.2L876.6,359.2L875,357.6L875,355L876.4,355.9L877.8,358.4L879.2,359.5ZM284.2,7.7L285.9,6.4L286.6,7.4L284.8,8.4L283,8.4L280.8,9.2L279.6,9.2L280.6,8.4L282.2,8.2L283.1,7.5L283.1,5.7L284.3,4.8L285,5L284.2,5.8L284.7,7ZM892.6,527.6L895.9,526.2L897.9,526.3L895.7,528.7L895.7,529.8L890.5,533.5L887.8,535.7L884.8,537.5L884.4,539.9L883.4,539.6L881,540L877.4,541.2L873.5,545.2L869.6,548.5L869.2,549.4L867.7,549.7L862.9,552.6L860.5,553L857.9,552.9L858,551.7L856.7,551.7L856.7,550.9L853.1,550.9L853.6,549.1L855.4,548.8L855.3,547.8L857.7,545.9L866.1,540.9L868,540.5L873.7,537.8L880.4,534.3L882.2,532.9L884.9,530L887.9,528.4L889.9,526L893.1,523.9L893.4,525.5ZM910.7,497.1L912.7,497.5L914,498.6L913.6,501.2L912.9,501.1L913.1,503.7L911.4,506.3L913.8,507.8L915.2,504.5L915.6,506.8L914.4,509.9L916.5,511.3L918.4,511.8L922.2,509.7L923.8,510.4L920.4,514.5L918.8,515.3L917,517.8L915.5,517.1L913,518.4L912.7,519.9L910.2,522.2L903.7,527.3L900,529.2L900,528.2L898.4,527.6L902.4,524.4L903.7,522.8L903.8,521.2L901,519.1L901.4,517.5L904.3,516.5L905.6,515.6L907.6,512.9L909.6,510.9L910.2,507.5L910.3,504.6L910.8,505.1L911.7,503.4L910.4,502.3L910.1,503.1L909.4,498.4L910.2,497.5L909.7,494.8L910.5,495.2ZM688.8,319.2L690.3,320.7L691.8,320.7L694.9,322.2L695.6,318.7L695.4,317.2L697.4,315.2L701.6,314.2L702.8,313.6L706.3,308.6L706.8,306.9L707.8,306.8L709.9,305.2L710.7,305.4L711.2,305.4L712.9,304.5L712.2,303L713.8,302.4L715,299.5L716.4,297.6L717.3,295.5L717.6,297.2L718.9,295.5L719.6,296.9L721.2,297.9L721.2,300.4L722.8,299.9L723.3,300.8L725.3,302.1L728,303L727.7,304.5L725.8,305.1L724.1,305L723.8,305.8L725.6,307.5L721.4,308.9L721,309.4L722.3,311.2L719.8,311.5L720.7,313.6L721.8,314.2L723.7,317.8L722.6,319.2L723.8,320.8L727.6,324.2L725.8,325L723.2,323.7L721.6,327.8L721.3,330.5L721.8,332.4L720.4,333.4L716.4,337.5L717,337.5L717.3,341L716.6,341L716.1,343.9L714.8,346.2L709.5,348.9L708.9,345.1L707.1,344.7L705.9,345.5L705,344.2L704,344.5L702.8,343L702.5,344.2L700.9,345.2L699.6,344.9L697.7,345.9L697.8,343.6L695.9,343L694.1,343.7L692.6,342.8L691.5,343.2L690.6,338.3L690.4,335.6L689.5,333.8L687.4,332.4L686.8,331.1L687.3,328.8L686,327.2L685.9,325.1L686.5,321.8L687.8,319.7ZM438.3,388.6L439.8,391.7L440.5,396.3L440.5,399.7L441.4,402.8L440.1,405.6L438.9,403.1L437.9,403.7L438.4,407L438,409.7L436.5,412.2L436.6,413.8L435.8,417L431.9,427.2L430.5,431.5L428.4,436.6L426.3,443.7L424.3,448.1L422.3,449.9L420,450.2L417.2,451.9L415.7,451.8L414.5,450.7L412.7,450.2L411.6,449.1L410.4,446L410.9,442L409.9,438.9L409.7,434.9L410.9,431.5L412.4,430.2L415.1,424.6L415.4,422.3L414.7,420.6L414.7,418.9L414.1,416.8L414.1,412.4L416.2,409.1L416.5,406.8L418.3,406.6L419.6,405.5L421.2,405.7L421.6,404.9L424.2,404.4L427.5,401.7L429.1,399.5L429.3,400.9L430.5,399.2L431.8,394.2L432.7,394.8L435,392.6L435.6,390.5L435.2,388.8L437,386.9ZM773.9,116.8L778,117.6L779,115.7L779.6,118.4L781.8,120.6L783.4,120.2L782.7,121.2L780,122.3L778.3,122.2L777,124L777.2,126.8L773.8,125.6L770.5,124.1L768.9,124.2L767.8,125.2L765.4,124.2L765.3,125.2L769.8,127.8L767.9,127.7L766.9,129.6L766,128.9L765.6,127.3L763.3,125L762.9,123.7L764.1,121.8L763.1,120.6L766.8,121.1L766,119L766,117.2L764.6,113.9L762.7,111.8L763,110.2L767.8,113.4L771.1,115.4ZM748.8,167.2L750.3,166.9L750.8,168.8L752.3,168.9L753.3,170.8L752.8,172.1L753.3,177.8L751.4,179.7L751.4,178.4L750.1,176.3L750.7,178.9L749,178.3L749,176.8L747.6,174.5L748.5,171.9L746.6,169.6L745.6,169.6L746.2,170.8L745.1,171.4L743.2,168.9L743.3,168.3L745.6,167L745.7,166.1L747.5,165.9ZM760.1,164L761.2,164.2L762.4,166.1L761.4,167.2L761.3,168.9L758.6,167.6L757.6,168.3L757.3,170.8L756.1,171.2L755.2,170.5L754,168L752.9,168.4L754.4,166.8L754.4,165.3L755.9,165.6L757.5,165.2L757.6,164.1L758.8,163.5ZM771.2,129.8L771.9,129.7L773.9,133.5L775.9,135L777.9,137.4L779.1,140.7L778.5,141.3L779.1,144.1L777.9,144.4L778,146.2L779.5,148.6L780.3,150.8L780,153.2L780.9,155.3L782.6,156.9L781.4,158L781.7,159.6L780.6,160.9L779.4,159L779.9,157.8L778.7,157.3L779,159.8L777.2,159.1L777.1,162.2L776.1,160.6L775,160L774.4,162.4L771.8,162.1L770,162.4L770.5,161.5L768.9,161.4L768.3,160.2L767.8,162L769.7,163.7L768,164.4L767.5,167.4L765.7,167.4L764,165.8L762.9,163.9L763.6,162.8L760.6,161.6L758.7,161.9L758.1,162.7L755.2,163.8L751.9,164.2L752.2,166L750.2,165L747.1,165.4L746.7,163.4L748,163.3L749.4,161.8L752.1,158L753.9,158.2L757.1,157.8L760.4,156.8L761.4,157.9L762.8,158L763.9,156.7L763.1,155.7L764.3,152L763.5,149L765,148.3L764.3,150L765.3,151.6L766.7,151.9L767,151L769.5,149.8L770.4,146.7L771.7,145.3L771.4,143.1L771.3,139.2L770.6,137.6L769,136.8L769.1,134.9L768.1,133.5L768.8,132.4L768.3,130.5L769.3,130.7L770.2,132.1L771.9,132.2L771.4,130.5L770.1,130.9L769.7,129.2ZM294.4,144.9L292.7,148.6L293.6,150.7L293,152.3L290.6,151.8L289.1,150.3L288.2,150.3L282.4,146.9L283.5,145.1L284.1,145.8L285.1,145.1L287.2,146L290.3,145.8L291.6,145.2ZM271.1,132.2L271.7,133.7L271.3,139.5L270.8,140.5L269.1,140L268.5,141.6L267.6,141.5L266.7,140.2L267.1,137.2L266.7,135L265.6,133.3L265.7,132L267,132.3L269.5,130.4ZM638.5,321.9L640.4,324.3L640.1,325.9L639.3,326.1L636.8,322.1ZM716.3,370.2L715.1,371.8L713,371.3L713.9,370.9L713.9,369.4L715.4,368.3L716.7,369.2ZM711.5,368L712.5,369.3L710.3,371.2L707.5,367.9ZM674,336.9L675.2,340.7L677.1,341.3L676.4,343.7L673.7,342.5L672.8,339.4L670.1,338.7L672.1,336.3ZM744.6,350.8L743.6,353.8L744.5,354.2L742.8,356.1L741.9,355.5L742.7,353.9L743.6,350.2ZM682.8,343.3L681.8,344.4L680.3,344.3L680.6,341.2L682.3,341.4ZM633.9,303.8L637.9,303.8L639.8,305.5L641.3,307.8L641.6,309.3L647.7,313.7L650.7,318.1L652.6,319.6L652.3,318.2L653.2,318.1L655,320.8L656.3,321.1L657.9,322.9L659.2,325.2L660.7,325.5L661.7,326.6L660.5,327.8L662.8,326.5L664.7,328.7L663.2,329.8L663.2,331.5L664.4,333.2L667,333.9L667.6,337.6L669,339L668.4,341.3L669.7,340.2L672,340.9L673.8,343.8L672.9,346.3L672.8,353L672.4,356.2L671.6,356.7L670.5,355.5L669.3,356.5L667.6,355.4L667.3,357.3L664.3,353.3L659.1,348.8L657.5,346.2L655.3,344.1L652.4,339.2L652.4,338.2L650.9,335.2L650.2,332.9L647.3,328.4L645.5,327.2L643.9,321.8L642.9,319.8L639.3,317.6L638.8,315.3L638,314.7L636.1,311.8L633.9,310.6L629.9,306.1L628.6,303.6L628.6,302.2L630.3,302L632.4,303.5ZM741.7,370.2L736.9,371.6L734.3,371.8L732.3,371.2L729.7,371.4L729.9,369.4L732.8,368.5L736.4,370.1L738.3,369.5L739.5,370.3L742.1,368.8ZM729.9,373.9L732,375.6L733,377.1L731.2,378.3L730.1,377.9L728,375.8L725.9,375.5L726.5,373.9ZM723,368.8L726.1,368.9L726.5,370.5L723.8,371.4L722.6,371.3L717.8,372.6L716.7,372.1L717.1,369.9L718.5,369.1L720.2,369.3L721.1,370.7L722.9,370.1L721.2,368.9L721.1,368L722.6,367.9ZM752.1,324.2L750.2,326.7L747.4,327.5L745.4,327.4L744.6,326.6L736.1,326.8L733.8,326.5L732.7,327.6L731.9,329.9L732.3,332L734,333.9L734.6,335.5L736.1,335.7L738.2,333L740,333.4L741.3,332.6L743.8,332.5L745,331.7L745.9,332L745.8,333.7L744.5,333.1L743.5,333.6L742.2,335.4L738.9,337.9L737.4,338.3L739.4,340.1L741.6,344.3L740.9,346.3L743.4,348.6L743.4,349.8L740.5,350.5L739.3,352.2L737.5,350.9L738.2,348.6L735.4,346L736.1,342.1L734.4,341.7L732.7,343.6L733.4,346.7L733,348.5L733,351.6L732.4,353.6L732.9,355.7L729.9,356.2L728.6,354.9L729.8,350.1L729.9,348.3L729.2,345.6L727.4,345.9L726.9,345.2L726.7,342.2L728,340.8L729,338.2L729,335.7L730.7,332.2L731.2,333.1L730.7,329.3L732.1,325.6L733.2,324.2L734.3,324.8L735.6,322.7L737.7,323L738.4,323.8L741.9,324L743.8,324.9L745.4,324.5L747.8,324.9L749.6,324L752.5,320.8L753.5,321.7ZM678.8,357.7L679.9,358.7L682.5,359L684,361.5L691.2,362.3L692.6,360L693.6,359.8L694.2,360.9L695.9,360.8L698,362L699.9,362.2L700.8,364L700.8,365.2L702.6,365.9L706,365.5L707.5,366.8L707,369.2L707.7,371L702.4,368.7L700,369.3L695.2,368.8L691.5,368L688.5,366.5L684,365.7L682.7,366.3L680.5,366L678,364.8L674.6,364.3L675,362.8L670.8,361.5L672.1,359.9L673.4,357.3L676.5,358.2L677.4,357.2ZM763.9,324.9L764.5,324.9L765.9,322.2L767.8,321.4L767.9,323.6L766.1,325.4L767.7,326.5L768.8,327.9L765,326.7L764.6,327.5L764.9,330.1L766.1,332.4L765.2,332.3L763.7,330.1L763.8,327.5L763.2,326.6L763.4,324.9L762.6,322.9L763.4,320.1L765.1,318.4L764.5,320.1L765,322.5L763.6,324.1ZM772.1,342.7L774.7,343.3L776.6,346.1L776.3,347.4L772.4,344.9L770.8,345.5L767.9,344.8L766.5,345.3L764.3,344.4L765.7,342.7L770.8,342.3ZM760.1,343.7L761.5,345.2L761.5,346.4L759.2,347.3L757.3,346.2L756.6,344.1ZM792.2,356.3L792,358.5L790.7,359.3L789.6,358L791.7,355ZM806.9,368.6L805.8,369.2L803.3,369.3L805,365.6L806.3,364.6L808.2,364.4L809,365.8ZM705.2,363L703.7,363.5L700.8,363.2L701.3,362L705.9,361.9ZM616.4,273.6L615.5,272L616,269.6L616.2,264.8L616.9,263.9L616.5,266.8L617.1,268.8ZM184.2,17.3L186.5,16.7L185.5,17.8L186.9,18.2L186.3,19.2L190.2,20.3L189.5,21L190,22.3L188.2,23.7L187.4,23.6L187,24.6L185.1,25.5L181.6,26.2L179.6,27.3L175.6,27.9L174.7,28.9L172.7,29.2L167.7,28.6L164.5,27L163.8,27.3L159.8,27.4L160.3,26.8L161.9,26.4L163.4,25L162.4,25.4L162.5,24.5L161,23.3L158.1,23.2L156.3,23.5L155.9,23.1L159.9,22.4L163,22.3L161.2,21.5L163.4,20.6L160,20L156.7,20.8L155,20.4L156.5,19.9L156.2,19.3L157.8,19.6L158.9,19.3L157.7,18L158.9,17.5L159.9,18.4L161.8,18L160.3,17.4L161.7,17.2L159.8,16.9L162.1,16.5L165.2,18.2L164.8,20.5L165.6,21.4L167.1,19.7L168,20.1L168.6,18.2L169.6,18.1L170.9,19.2L171.7,18L173.7,17.6L175.8,19L175.3,17.6L176.5,17.7L177.6,18.4L179,17.4L181.1,17.5L181.1,16.4L182.9,16.1ZM324.3,141.4L327.1,142.8L327.9,144.9L325.9,144.1L323.8,142.1L322.3,141.8ZM327.3,157.9L329.1,158.7L330.7,158.4L333.7,159L334.8,159.8L336.4,159.4L336.8,160.2L331.2,160.8L330.8,160L327.5,159.2L326.1,158.4ZM270.2,123L270.6,126.1L269.3,129.8L267.8,128.8L267.1,127.2L266.8,125.1L267.3,124.2ZM902.1,426.2L903,426.4L905.4,428.7L906.6,431.1L910.6,435.1L909.5,436.5L907.4,434.4L904.6,432.4L903.6,431.2L901.6,427.3ZM487,564.6L488.5,563.9L488.5,565.3L491.2,564.3L491.9,565L490.6,566.1L489.3,565.7L488.6,566.4L490.4,566.8L489.5,567.4L486.3,566.5L484.8,567.1L485.6,564.4L487.2,562.5ZM971.5,406.6L969.6,408.3L969.1,409.3L970.8,408.2L970.6,409.3L968.4,409.6L967.6,409.2L965.3,410.4L965.2,408.7ZM963.1,412.3L964,413.7L963.8,415.8L960.2,416.6L958.3,415.8L958.3,414.7L960.3,412.8ZM312,50L314.4,50.6L312.6,51.7L310.8,52.1L309.6,51.6L309.4,50.6ZM177,-20L177.1,-19.2L175.7,-18.4L173.7,-18.9L172.1,-18L172.6,-17.4L171.7,-16.4L173,-16.7L173.7,-17.7L175,-17.7L176.9,-15.8L176.4,-15L173.7,-15L173.8,-14.7L171,-14.4L168.6,-14.9L169.4,-15.8L167.5,-15L167.4,-14.3L168.4,-13.8L170.4,-13.8L173.1,-13.4L172.5,-12L169.3,-11.7L167.3,-11.1L164.9,-11.4L162.7,-12.2L161.7,-13L160,-12.4L157.9,-13.1L159.6,-12L155.5,-11L152,-11.8L153.9,-11.1L153.3,-10.5L157.6,-11.1L160.1,-11.7L162.2,-11.6L165.1,-10.4L167.5,-9.7L167,-7.7L166.2,-6.6L161,-8.1L159.7,-10.2L153.3,-8.9L154.1,-8.8L158.5,-9.6L159.2,-9.5L159.2,-7.9L164.3,-6L165.7,-5.2L167,-5.1L165.1,-4.1L167.4,-4.1L167.3,-1.6L167.5,-0.3L164.8,0L164.9,-1.6L163.9,0.1L161.9,0L160,-0.8L159.4,-2.3L158.6,-3.1L154.8,-4.4L151.4,-4.7L151,-4.3L155.1,-3.9L154.9,-2.9L151.7,-2L146.9,-2.2L147.7,-1.7L147.1,-0.8L144.1,0L147.3,0.2L151.3,-0.1L152,0.3L148.5,1.4L148.9,1.9L150.2,1L152.1,1L155,0.4L160.6,1.3L164.9,1.3L162.4,2.6L159.9,2.9L160.1,3.4L158.4,3.5L158.4,4L154,5.7L153.4,6.4L150.7,7.2L144.6,8.2L141.7,8.8L139.7,8.7L138.6,9.2L137,9L137.2,9.5L134.6,9.5L132,8.2L132.1,10L128.6,11.5L124.8,15.3L122.8,16.5L120.8,17.2L118.8,16.4L119.3,17.7L116.5,19L114.4,18.8L111.8,20L111.2,19.5L114.1,16.9L111.4,16.7L112.6,17.2L110.6,19L109,19.9L103.9,20.3L105.7,21.1L103.1,22.3L100.5,22.1L100.6,23L101.7,22.8L102.7,24.7L100.5,25.8L97.9,25.4L99.6,26.2L100.9,26.2L100.7,27.9L98.8,28.8L98.4,29.8L94.6,32.3L91.7,32.2L94.1,32.8L93.1,34.6L93.5,35.9L92.6,36.6L90.2,40.6L88.8,41.7L85.9,41.4L87.9,42L88,43.7L87.2,44.3L85.2,43.9L86,44.6L84.4,44.7L83.5,43.9L80.6,43.1L80.8,42L78.8,41.3L78.7,40.6L80.1,38.8L76.2,40.4L71.8,40.2L73.4,39.6L71.4,39.6L71.3,38.6L69.9,38.4L69.1,37L69.2,35.7L71.3,34.9L68.5,35.3L69,34.3L66.8,33.2L67.2,32.2L69.3,30.8L67,31.7L64.6,28.2L64.8,26.7L68.6,25.8L68.9,25.4L64.9,26.3L64.6,25.8L66.7,24.3L69.7,23.8L70.5,24.8L70.5,23.7L69.3,23.5L68.4,21.6L68.6,23.3L66.2,24.1L63.9,25.8L64.1,21.8L63.5,21.1L64.3,20.5L61.7,20L62.6,18.4L61.8,18.1L66.8,16.2L67.8,15.4L63.6,17.3L61.2,17.6L61.5,16.6L64.1,14.8L65.7,14.5L62.9,14.4L61.8,13.6L62.5,12.4L66.6,11L71.2,11.5L72.1,10.8L69.5,11.1L67.8,10.7L65.6,11L62.9,11.9L63.8,10.7L65.8,9.1L70.5,9.8L72.1,8.7L68.8,9.1L67.1,8.7L65.2,8.8L66.7,7.5L69.2,7.1L71.1,7.8L72.7,7.5L74.1,6.7L72.6,7L73.7,5.4L75.9,5.4L75.6,4.9L73.8,5.1L75.7,3L76.9,2.7L77.4,1.8L75,1.6L73.9,1.9L71.4,1.6L70.1,0.9L66.5,0.2L65.3,-0.8L66.6,-1.4L70.7,-1.2L74.2,0.1L76.8,0.3L75.1,-0.5L75.7,-1.6L74.4,-2.1L76.6,-2.2L75.7,-2.6L70.8,-2.9L70.6,-3.4L72.1,-4.2L74.6,-4.5L72.6,-4.8L70.1,-4.5L70.8,-6.1L69.9,-7.5L70.4,-5.5L68.4,-4.8L68.3,-4L65.9,-3.6L64,-3.9L63.4,-4.4L65.2,-6.6L66.9,-7.4L64.5,-6.8L64.9,-7.9L67.6,-8.7L68.2,-9.6L66.6,-9.8L65.7,-10.5L67.1,-11.1L67,-11.9L66,-11.6L65.2,-12.2L66.3,-13.5L65.4,-14.6L64.5,-14.8L65.1,-15.7L66.4,-16L64.5,-17.2L62.7,-17.9L61,-19.2L62.2,-19.7L62,-20L177,-20ZM69.7,2.1L71.7,2.6L71,3.9L66,4.9L64.5,4.2L65.7,3.7L63.6,3.6L62.5,3L63.1,2.2L64.7,2.1L63.5,1.6L64.1,0.8L65.2,0.6L68.1,1ZM155.7,-1.8L155.6,-0.8L152.7,0L151.8,-0.4L147.7,0L148.6,-1.7L150.9,-1.6L154.6,-2.3ZM278.4,62.7L277.2,64.1L278,64.9L276.9,65.4L276.8,67L276.2,67.2L275.3,65.4L274,65.3L272.8,63L274,62.8L274.5,62L275.8,63.1L275.9,61.9L277.1,61.2L278.3,61.4ZM361.9,159.6L362.7,158.6L364.8,158.8L368.9,157.2L366.7,159L367,160.1L363.1,162.5L361.1,161.7L360.5,160.7ZM685.5,232.9L686.3,234.5L684.9,236.8L684.8,238.9L681.4,241.4L677.8,239.9L677.1,236L679.1,234L679.2,233.3L684.5,232.2ZM-20,-19.3L-19.9,-19.3L-20,-19.7L-17.2,-20L-2.7,-20L-2.7,-20L-2.9,-19.6L-1.2,-19.5L-1.7,-18.5L-4.2,-18L-1.7,-17.4L-4.3,-17L-5.2,-16.2L-8,-16.1L-10,-15.8L-13.1,-16.1L-13,-17.1L-15.2,-16.1L-20,-16L-20,-19.3ZM7.3,108.1L7.2,109.3L8.6,108.9L8.7,108.1L10.7,106.4L12.2,107.1L12.1,108L9.6,109.5L6.2,109.9L5.9,108.1L9.2,104.1L11.2,103.1L11.1,104.4L9.5,107ZM34.8,82L32.5,83L33,84.3L28.5,88.9L27.5,90.9L30.2,88.7L30.3,89.4L32.7,89.1L30.5,90.5L30,91.7L33.2,91.5L32.8,92.9L36,91.3L35.8,92.2L37.7,91.7L38.8,93.1L36.2,94.8L37.8,95.3L36.2,96.5L38.1,96.2L40.1,95.4L39.6,96.6L37.6,97.5L36.2,99.4L37,100L38.6,98.5L40.2,97.9L38.6,100.1L38.6,101L40.2,99.5L40.4,100.6L37.8,104.8L35.9,104.7L36.6,102.5L34.4,104L34.1,103.7L35.8,101.3L35.7,99.6L35.1,99.1L33.2,101.4L32.1,101.3L29.9,103.6L28.1,103.8L28.1,102.8L29.5,102.4L32.3,100.5L30.5,100L30.1,100.8L28.6,100.7L28.9,99.3L27.4,100L24.6,100.5L19.6,100L16.6,100.5L16.6,98.5L20.7,96L17.6,96L19.4,95.7L21.1,93.4L22.8,92.7L22.2,92L23.1,91.3L27.1,85.9L29.8,83.2L32.8,81.9ZM-20,-11.8L-18.6,-11.7L-18.1,-12.3L-14.5,-12.9L-12.3,-12.9L-10.9,-12.5L-10.9,-11.3L-9.8,-10.5L-9.7,-9.1L-13.6,-7.4L-11.4,-7.8L-13,-7L-12.5,-6.5L-13.5,-5.8L-10.5,-7L-9.8,-7.7L-7.6,-7.7L-6.9,-7.2L-7.5,-6.3L-5.8,-7.5L-3.2,-6.8L-4.5,-7.5L-4.2,-8.5L-1.5,-9L0.6,-9L2.4,-8.4L4.9,-8L5,-7L2.7,-5.8L5.2,-6.5L7,-6.3L6.4,-5.5L4.9,-4.8L3.9,-3.8L5.8,-4.8L8,-5L5.8,-3.8L7.7,-4.5L8.7,-3.3L9,-4.3L10.4,-4.9L14,-4.2L14.9,-3.5L13.5,-2.6L11.8,-2.2L14.2,-2.1L15.7,-2.6L15.2,-1.3L12.1,-0.4L13,-0.2L11.7,1.3L14,-0.5L17.8,-1.5L20,-1.2L21.8,-0.6L22,-0.1L15.9,1.6L20.2,1.1L19,1.9L19.7,2.1L22.4,0.6L24.2,1.7L24.1,2.9L21.6,2.8L17.3,3.8L19.7,3.6L20.9,4L23.1,4L24.9,4.7L24.3,5.3L20.9,4.9L18.7,5.1L21.1,5.8L20.1,6.8L18.9,6.5L19.2,7.7L23.2,8.2L21.9,8.7L22.4,9.1L24.5,8.8L23,10.7L26.1,10.1L25.6,11L28,9.8L27.3,10.9L28.7,10.7L29.8,11.6L30.2,13L31.2,12.6L32.7,13.2L29.8,14.9L32.4,14.3L34.2,14.5L35.7,14L37.2,15.6L34.8,17L32.8,16.6L32.5,17.3L33.9,18.1L32,18.1L32.3,19L31.1,19.8L28.9,19.9L27.8,22L26.8,22.8L26.2,22L24,22L22.8,20.5L22.6,19L24.7,18.2L26.5,17L24.3,18L21.5,18.3L19.9,17.1L19.4,16L17.6,16.1L17.2,17L15.8,16.2L15.9,17.2L17.2,18.1L14.9,18.4L13.4,17.2L12.4,17.5L13.9,18L13.5,18.5L14.5,19.2L13.9,20.1L15.2,19.8L16.3,20.6L15.4,21L16.9,22.6L19.1,23L20.8,24L19.8,24.5L21.1,24.9L19.9,25.7L20.1,26.6L21.7,26.6L20.9,29.9L20.4,29.9L19.5,27.7L19.1,29.9L19.7,31.2L18.2,31.3L17.6,32.5L15,30.5L14.2,30.9L12.2,29.7L10.6,27.8L10.6,29.2L8.6,27.9L7.2,28L8.7,30.2L10.1,30.6L11.7,32.3L12.7,32.7L14.2,34.4L12.7,35.8L9.2,34.6L6.2,34.3L4.2,33.5L3.3,32.1L1,32L-1.8,30.8L-3.5,29.1L-1.6,28.8L-2.1,28L-3.7,28L-6.3,24.9L-5.5,24.3L-7.6,24.3L-10.4,23.4L-10,24.4L-11.6,24.8L-13.6,24.5L-14,25.1L-17.5,25.7L-20,25.3L-20,22.6L-20,22.6L-17.5,21.7L-16.9,20.6L-14.3,20.9L-12.5,21.5L-11.9,21.2L-4.6,20.4L-4.6,19.3L-6.1,17.7L-1.3,15.5L-0.3,15.3L1.1,14L3.3,13.1L2.2,8.5L0.9,8.8L0.5,7.6L-0.9,7.6L-1.6,6L-3.4,6.1L-7.5,7.1L-6.7,5.9L-4.8,5.8L-3.6,5.3L-3.6,4.6L-5.3,4.1L-5.1,3.1L-6.1,3.6L-7.1,3.3L-6.4,2.5L-8.1,2.5L-7.8,0.9L-9.4,0.9L-11,-0.6L-12.4,0.4L-11.3,0.7L-11.4,1.7L-13.4,2.3L-18.5,1.5L-20,1.5L-20,-11.8ZM-20,1.6L-18.5,2.5L-18.8,2.9L-20,2.3L-20,1.6ZM8.7,93.3L7.1,93.4L4.3,92.7L2.7,91.9L1.9,90.7L0.1,89.9L1.3,89.4L5.7,90.5L8.9,92.5ZM-2.1,105.6L-1.5,105.2L0.4,105.9L4,105.6L4.5,105.9L2.3,106.9L2.1,108L0.8,107.8L0.5,106.6L-0.5,107.1L-2,106L-3.3,105.9L-4,104.8L-2,102.9L-2.7,104.2ZM-5.4,8.7L-4,9L-5.4,11.9L-8,13L-12,13L-12,11.3L-9,9.1ZM-5.2,-12.6L-1.4,-12.6L1.4,-12L3.2,-10.4L3.4,-9.6L2.3,-9.4L-1.9,-9.7L-7.3,-9.1L-8.4,-9.5L-8.2,-10.9L-9.8,-11.5L-8.9,-12.9L-7.6,-13ZM28.6,330L30.8,329.7L33.8,330.6L33.1,333L31.6,336L29.2,336.2L27.9,337.5L25,337.5L23.9,333.8L24.4,330.2L26.1,329.5ZM824,386.3L823.5,388L824.5,389.6L824.6,393.4L824.3,394.9L824.6,397.8L825.4,398.4L827.7,397.2L828.2,398.5L830.4,400.7L829.9,403.2L830.2,406L829.7,407.7L831,410.9L831.4,413.6L830.4,416.2L831.3,418L830.8,419.4L831.3,420.6L834.8,422L836.3,424.4L838.7,425.7L839.5,427.3L838.6,427.8L840,430.4L840.5,432.6L840.1,435.9L841.3,437.3L842.2,435.4L843.6,437.3L844.5,437.4L843.6,441.7L845.4,444.4L846.8,445.3L847.1,447.2L848.1,448.2L849,451.2L848.6,452.5L849.2,453.8L848.3,455.4L847,459.7L847,464.8L846.1,467.8L844.2,469.9L842.8,472.8L840.6,476L838.6,480.2L835.9,483.2L834.7,485.1L831.2,487.3L827.8,490.6L826.6,492.7L825,494L822,498.3L821.5,498.5L818.6,501.4L815.8,505.7L813.8,509.6L811.4,510.8L806.6,511L802.3,512.9L799.2,515L797,515.2L797.3,515.9L796.3,517.4L796.1,516L793.9,514.4L794.2,513L792.3,514.3L793.9,512.3L793.4,511.4L791,512.5L791.8,512.9L789.1,514.1L786.1,515.8L783.4,514L780.4,513.2L779,513.6L778.1,512.2L776.7,512L775.2,508.2L776.7,505.4L776.7,502.7L775.5,500.2L776.8,499.1L773.6,500.5L772.4,500.4L773.8,499L775.3,496.3L774.9,493.4L771.4,498.1L768,498.6L769.2,497L770.7,497L772.5,493.4L775.4,490.6L776.2,486.9L774.2,488.7L772.6,490.8L768.6,492.7L765.3,495.8L765.2,497.1L763.8,497.1L762.9,495.4L763.7,495.4L764,492.1L763.4,490.8L763.5,489.4L761.9,488.6L761.9,486.6L762.7,485.6L760.7,483.8L759.4,483.8L758,482.7L755.7,483L754.3,481.5L752.4,480.5L750.8,481L748.2,480.9L743.4,481.5L739.3,483.3L736,484.2L730.4,484.4L724.9,487.2L722,488.4L718.9,491.8L716.9,492.5L715.4,492.1L712.8,492.6L712.6,492L710.1,491.8L706,492.4L703.8,492.5L701.6,494.4L699.2,494.9L695.4,497.4L693,497.9L689.1,497.4L687.3,496.4L686.7,495.1L684.4,493.8L685.5,490.3L686,490.9L687.5,490.3L688.7,488.7L690.9,482.4L690.3,476L691.4,470.5L690.9,466.2L690,464L690.4,460.5L688.8,456L689.3,454.5L689.6,456.7L690.9,455.6L689.8,452.6L691,453.1L691.8,455.9L693,453.2L691.8,449L691.4,446.4L692.3,443.7L693.8,441.5L694.5,439.1L694.3,437.7L696.2,434.4L696.9,433.8L696.4,437L697.5,436.3L700,433.4L702.7,432.2L705.4,430L708.6,428.2L711.3,428.5L714.9,426.8L717.2,426.3L718.9,425L720.8,425.2L723.4,424.6L726.5,423.4L729.5,420.7L731.4,417.7L733.9,415.6L733.5,415.2L733.7,412.1L736.5,409.5L737.8,407.9L738.1,409.9L739.3,413.1L739.9,410.6L740.7,409.9L739.8,408.1L741.1,406.7L741.4,407.6L743.9,407.4L744.6,406.3L744.1,404.6L744.5,403.3L747.5,401.1L748.5,401.5L748.1,399.6L749.9,398.4L751.1,399.1L752.7,396.1L754.2,396.9L755.9,394.9L758.7,397.1L760.5,399.7L760.2,401.1L761.6,399.9L764.8,400.3L766.1,401.6L766.3,400.2L767.2,400.1L765.6,398L767.2,396L768,394.1L770,392.8L769.8,391.1L772,388.6L775,386.8L775.5,387.8L778.9,387.4L779.5,387.9L780.5,386.7L780.9,384.8L778.8,384.1L777.6,383L779.5,382.7L781.1,384.1L782.5,383.9L783,385.1L785.9,385.7L787.2,386.5L789.2,386.4L791.1,387.6L793.6,386.1L795.2,388.6L795.5,387.1L796.7,386.3L798.1,388.2L796.1,390.3L795.5,392.4L794.9,392L793.3,392.8L793.2,395.2L792.5,396.9L790,399.8L790.4,400.9L798.3,406.9L800,409.2L803,410.1L803.6,412.1L806.4,413.9L808.5,413.6L810,412.6L812.3,408.9L813.6,406.1L814.1,403.9L815.3,401.2L815.4,398.4L815.9,396.9L815.7,395.2L816.8,392.6L816.9,391L818.3,390.4L817.6,388.2L819,386L820.5,381.5L821.8,380.3L823,383.2L822.8,385.7ZM772.6,383.5L775.4,382.6L776.4,383.8L773.7,386.2L772.1,384.7L771.7,382.7ZM769.8,501L771.5,501.1L768.6,502.6L766,502.4L766.1,501L769.1,500.3ZM787.1,525.2L788.1,525.1L791,527L794,526.2L795.8,526.3L798.3,525.2L799.1,526L796.3,531.2L796.2,530.9L793.5,533.8L792.1,536.5L791.2,536.8L791.4,535L790.3,535.4L786.7,538.7L785.8,538.2L783.8,538.4L784,537.6L783.3,535.4L784,532.1L784.9,532.7L784.5,529.3L785.1,526.2L786.2,524.7Z"/>
-          <g class="vis"><path class="v" data-iso="DE" d="M269.5,100.7L266.1,99.5L265.4,100.4L262.4,100.4L262.2,98.2L263.1,95.5L264.1,93.9L261.6,93.1L259,93L257.5,91.7L258,90.1L256.6,88.6L257.5,87.7L256.1,85.7L255.7,84.6L256.5,83.8L256.7,82.2L255.8,81L258.6,80.3L259.6,78.1L258.5,77.8L259.5,77L260,74L259.5,73.6L260.2,72.2L262.8,72.2L263.7,73.3L264.6,73L264.9,71.3L266.2,71.1L265.9,69.6L264.9,68.9L266,68.3L264.9,66.6L268.7,67L270.2,68.5L272.3,69.3L273.3,69L273.1,70.8L274.8,71L277.2,70L278.8,68.6L280.4,68.9L282,70.1L283,70L283.5,71.4L285,72L285.7,74L284.8,75.9L286.7,77.5L287.3,79.5L286.8,80.7L288.5,83.3L287.9,85.2L286.3,85L279.5,87.5L278.7,88.7L279.9,89.6L279.5,90.3L280.4,91.6L284.9,94.9L284.5,96L281.4,97.7L282.4,100.1L282.3,100.9L281.1,100L279.3,99.8L274.9,101.3L272.8,100.6L272.4,101.7L270.3,100.4Z"/><path class="v" data-iso="FR" d="M270.2,123L270.6,126.1L269.3,129.8L267.8,128.8L267.1,127.2L266.8,125.1L267.3,124.2ZM262.4,100.4L260.4,100.9L260.2,101.6L256.8,105.8L257,107.2L258.2,105.8L259.4,105.9L260.5,108.2L259.7,109.2L261,110.7L260.8,111.4L259.1,112L260.7,113.9L260.2,115.7L263.2,116.9L262.5,118.4L262.3,118.5L262.1,118.6L258.8,121.3L257.4,121.7L254.7,121L253.4,120L251.8,120.2L249.6,119.2L246.7,121.2L245.9,122.5L246.5,124.8L244.4,125.2L242.1,125.1L240.8,124.4L239.8,124L237,122.8L236.8,123.6L234.2,123.6L233.2,122.9L228.8,121.7L229.1,120.9L227.6,120.1L228.8,119.4L229.7,114.7L230.4,110.1L231.5,111.1L230.5,109.1L230.1,106.4L227.8,105.4L226.3,102.4L227.1,101.7L225.1,101.7L225.4,100.9L220,99.2L218.5,99.3L217.2,98.3L218.5,97.7L217.1,96.8L217.1,95.9L222.6,94.5L224.5,95.9L225.4,95.4L229.3,95.4L228.7,94.7L228.6,92.8L227.6,90.6L229.8,90.6L230.2,92L233.8,92.4L235.9,91.7L235.1,90.5L238.9,89.1L240.2,88L240.1,85.7L241.3,84.5L243.5,84.1L244.6,85.8L245.6,85.5L246.2,86.7L247.7,87.6L249.5,88L249.4,89.2L251.3,89.1L252,88.5L252.1,90.1L254.4,91.4L255.5,91.3L257.5,91.7L259,93L261.6,93.1L264.1,93.9L263.1,95.5L262.2,98.2ZM8,317.8L9.8,315.4L9.8,313.7L10.7,311.7L9.2,309.5L8.9,304.9L10.2,303.2L11.5,301.2L13.1,302.2L15.4,302.9L18.8,306.3L19.9,307L20.4,309.4L19,311.2L16,317.6L14.9,318.5L11.5,317.6L10,318.8Z"/><path class="v" data-iso="CN" d="M672.3,225.6L671.5,224.9L669.7,225.1L668,223.7L666.6,223.3L665.7,221.3L666.3,219.4L665.2,218.8L662.3,218.7L659.6,216.7L658.2,217.7L658.1,218.8L656.6,219.8L655.3,219.6L654.9,220.6L653.5,219.4L652.2,219.5L651.3,221L648.7,219.7L647.8,221.4L645.9,221L645.5,222L646.7,224L647.3,227.3L645.2,226.9L644.5,225.3L644.1,224.4L642.2,225.8L640.9,225.8L639.7,224.6L639.2,223.1L636.2,222.6L636.3,219.2L635.9,217.9L633.9,217.5L632.6,214.3L632.9,213.1L629.7,213.2L628.3,214.1L628,211.7L627.3,211.2L628.8,205.9L630.4,204.7L629.9,200.1L628.7,196.3L627.3,196.4L625.8,193.5L623.7,191.8L622.6,193.2L619.5,192L618.3,192.2L619.1,190.5L617.6,188.4L616.1,187.2L614.1,189.1L611.4,188.6L610.7,187.9L608.4,190.4L605.8,191.4L604.3,193.5L604.3,194.5L601.8,195.5L600.4,195.4L600.1,194.5L595,193.8L593.3,192.7L591.7,193.7L589.9,197.5L589.1,196.5L589.2,194.9L588.1,193.8L586.2,194.9L582.4,195L579.8,193.8L579.4,194.6L577.9,193.8L577.6,194.6L576.1,192.9L573.9,192.7L573.8,191.4L572,191.4L569.7,189.8L568.9,188.3L566.9,188.5L564.8,186.4L563.5,186.1L560.3,184L559.6,183L557.1,182.9L556.7,184.1L555.7,183.8L554.2,182.6L552.1,181.8L551.9,180.9L549.2,180L546.9,177.8L545.6,178.2L544.9,175.1L543,172.4L544.1,172L545.2,173.2L546.3,172.5L545.1,169L543.5,167.7L542.7,164.8L543.4,164.2L541.9,162.8L540.2,162.1L537.4,158L536.1,158.1L533.2,157.2L532.1,156.2L530.6,156.4L529.4,155.2L528.5,152.5L526.8,152.1L526.3,151.2L523,150.7L522.2,150L524.1,149.7L524.8,149L523.7,147.1L522.1,143.5L520.1,142.8L518.3,143.1L517.8,141.2L516.6,139L517.5,138.3L517.3,136.2L520.2,134.7L520.1,134L522.7,133.5L523.4,134.9L526.3,134.2L526.9,131.7L531.7,131.2L532.2,129.8L535.2,127.9L538.3,126.7L538.1,125.9L537.2,123.7L538.3,122.7L537.5,121.9L538.9,121.3L535.8,116.9L535.2,113.8L533.4,113.5L533.3,112.5L536.1,112L538.9,110.9L540.3,111.8L542.2,112L542.1,110.5L540.8,109.8L541,103L541.5,102.3L544.9,103.3L547.3,103.3L548,103.9L550.1,102.8L550.4,102L548.8,98.8L548.8,96.7L551.5,96L551.3,93.7L553.3,93.4L554.9,93L555.2,94.3L556.7,95.9L558.9,96.7L559.5,97.4L561.6,98.4L563.5,98.4L566.8,100L568.2,101.8L570.2,103.4L571.6,105.4L572.4,107.7L572,110.1L573.4,111.7L576.3,112.2L580.8,112.4L584.3,113L589.2,115.7L591.8,116L595.8,121.1L598.4,123.4L601.4,123.1L610.3,124.1L612.1,123.6L619,124.6L620.4,125.8L625,126.8L627.9,128L630.6,127.4L631,128.5L633,128.8L633.5,128.1L638.5,125.5L643.5,124.7L648.3,124.7L651.2,123.1L652.4,120.4L655.1,118.7L651.7,115.6L651.6,113.4L652.1,112.3L654,112.3L655,113L659.1,113.8L660.3,112.9L661.2,110.9L665.4,110.4L666.7,108.8L666.7,106.5L669.4,106.1L672.2,104.5L674.1,104.3L677.6,105L677.8,103.8L676.4,102.4L669.9,98.5L667.2,98.5L666.4,100.1L663.8,99.1L661.8,99.1L661,99.9L659.2,98.7L658.8,95.2L658.7,89.9L661.2,90.9L663.8,91.4L665,89.9L667.4,88.8L666.2,87.3L666.3,81.7L667.5,80L665.8,77.3L663.5,77L663.2,76.3L665,74L668.4,73.2L673.6,72.8L679,74.7L679.8,74.4L682.3,75.1L686.5,78.1L690.8,82.2L692.4,84L697.3,88.2L697.9,89.7L700.5,91.1L703.3,91.1L705.2,92.1L706.5,92L710.4,94.3L711.8,94.4L712.5,95.6L714.1,96.9L714.7,98.4L716.6,99.9L719.5,100L722.1,99.5L722.2,98.7L724.6,98L726.8,96.7L728,96.9L730.3,99.8L729.3,101.7L729.9,102.5L730.4,105.5L731,106.7L730.7,108.4L731.1,109.7L730.5,110.2L730.7,112.4L725.9,111L725.3,112.7L724.1,113L724.7,114.2L726.8,117L728.6,120.3L729,122.5L727,123.4L727.8,124.3L725.9,122.6L724.3,122.1L724.9,124.6L723.5,124.9L722.9,126.7L719.7,126.9L721.6,128.9L721.4,129.8L717.4,129.1L715.8,127.9L715,128.6L715.2,129.9L714.3,132.1L711,134.2L710,136.4L709.3,137.2L705.6,138L703.5,139.4L701.9,141.8L700.3,142.5L699.7,141.6L701.5,140.7L701.5,139.3L699.4,139.3L699.4,137.1L700.3,136.6L700.9,133.8L698.7,132.4L695.9,132.1L694.7,135.3L691.9,136.9L691.5,139.2L690.8,140.4L688.6,140.9L687.3,140.1L686.5,140.6L686.6,143L689.2,145.1L693,145.8L694.2,147.4L694.4,149.2L696.7,150.2L700.4,146.8L704.6,148.6L706,148.3L708.3,148.7L708.9,151.1L708.5,151.6L706.6,151L703.6,152.7L703.2,154.8L701.3,156.3L699.9,159L700,161.7L704.9,163.9L706.9,167L709.4,170L709.9,171.7L712.5,173.1L712.8,173.9L715,175.4L715.4,176.3L711.6,175.5L709.5,174.4L708.4,175.1L710.4,175L715.2,178.2L716.7,180.1L715.4,180.5L713.3,182.9L711.8,182.7L712.9,183.9L714.8,183.1L717.3,184.7L719.1,185.2L717.3,187.1L718.9,186.5L719.5,188.8L718.6,189.4L718.4,191.1L719.3,192.5L717.4,192.8L715.7,198.6L715.5,200.7L713.4,200.1L715.1,202.3L713.1,204L714.5,203.9L715.1,206.9L713.3,206.7L712.9,209.1L711.9,210.7L710,210.5L710.3,212.4L709,214.3L708.4,214.3L705.5,216.7L705.3,218.6L704.4,218.5L701.6,219.7L700.3,219.3L699.1,220.2L696.8,220.6L695.8,220.7L693.9,219L693.6,217.8L692.6,218.8L693.9,220.3L694.1,222L694,222.3L689.6,224.4L688.1,223.9L687,225.3L684.6,225.6L683.1,227L682.4,226.4L681.9,228.7L683.5,230.3L682.2,231.6L680.5,229.8L679.6,227.4L680.3,225.7L678.6,225.4L676.9,225.9L674,223.7L674.4,224.8ZM685.5,232.9L686.3,234.5L684.9,236.8L684.8,238.9L681.4,241.4L677.8,239.9L677.1,236L679.1,234L679.2,233.3L684.5,232.2Z"/><path class="v" data-iso="AT" d="M269.5,101.9L269.5,100.7L270.3,100.4L272.4,101.7L272.8,100.6L274.9,101.3L279.3,99.8L281.1,100L282.3,100.9L282.4,100.1L281.4,97.7L284.5,96L284.9,94.9L285.8,95.6L288.2,95.6L289.1,93.9L290.3,93.9L293.1,94.9L294.7,94.7L296.5,95.7L296.2,96.6L297.4,98.4L297.2,99.8L295.3,99.6L295.2,103.1L293.9,103.8L293.4,104.7L289.9,104.9L288.1,105.9L285.1,105.4L280.2,104.5L279.3,102.8L275.5,103.4L275.2,104.1L273,103.8L269.8,102.9Z"/><path class="v" data-iso="AU" d="M824,386.3L823.5,388L824.5,389.6L824.6,393.4L824.3,394.9L824.6,397.8L825.4,398.4L827.7,397.2L828.2,398.5L830.4,400.7L829.9,403.2L830.2,406L829.7,407.7L831,410.9L831.4,413.6L830.4,416.2L831.3,418L830.8,419.4L831.3,420.6L834.8,422L836.3,424.4L838.7,425.7L839.5,427.3L838.6,427.8L840,430.4L840.5,432.6L840.1,435.9L841.3,437.3L842.2,435.4L843.6,437.3L844.5,437.4L843.6,441.7L845.4,444.4L846.8,445.3L847.1,447.2L848.1,448.2L849,451.2L848.6,452.5L849.2,453.8L848.3,455.4L847,459.7L847,464.8L846.1,467.8L844.2,469.9L842.8,472.8L840.6,476L838.6,480.2L835.9,483.2L834.7,485.1L831.2,487.3L827.8,490.6L826.6,492.7L825,494L822,498.3L821.5,498.5L818.6,501.4L815.8,505.7L813.8,509.6L811.4,510.8L806.6,511L802.3,512.9L799.2,515L797,515.2L797.3,515.9L796.3,517.4L796.1,516L793.9,514.4L794.2,513L792.3,514.3L793.9,512.3L793.4,511.4L791,512.5L791.8,512.9L789.1,514.1L786.1,515.8L783.4,514L780.4,513.2L779,513.6L778.1,512.2L776.7,512L775.2,508.2L776.7,505.4L776.7,502.7L775.5,500.2L776.8,499.1L773.6,500.5L772.4,500.4L773.8,499L775.3,496.3L774.9,493.4L771.4,498.1L768,498.6L769.2,497L770.7,497L772.5,493.4L775.4,490.6L776.2,486.9L774.2,488.7L772.6,490.8L768.6,492.7L765.3,495.8L765.2,497.1L763.8,497.1L762.9,495.4L763.7,495.4L764,492.1L763.4,490.8L763.5,489.4L761.9,488.6L761.9,486.6L762.7,485.6L760.7,483.8L759.4,483.8L758,482.7L755.7,483L754.3,481.5L752.4,480.5L750.8,481L748.2,480.9L743.4,481.5L739.3,483.3L736,484.2L730.4,484.4L724.9,487.2L722,488.4L718.9,491.8L716.9,492.5L715.4,492.1L712.8,492.6L712.6,492L710.1,491.8L706,492.4L703.8,492.5L701.6,494.4L699.2,494.9L695.4,497.4L693,497.9L689.1,497.4L687.3,496.4L686.7,495.1L684.4,493.8L685.5,490.3L686,490.9L687.5,490.3L688.7,488.7L690.9,482.4L690.3,476L691.4,470.5L690.9,466.2L690,464L690.4,460.5L688.8,456L689.3,454.5L689.6,456.7L690.9,455.6L689.8,452.6L691,453.1L691.8,455.9L693,453.2L691.8,449L691.4,446.4L692.3,443.7L693.8,441.5L694.5,439.1L694.3,437.7L696.2,434.4L696.9,433.8L696.4,437L697.5,436.3L700,433.4L702.7,432.2L705.4,430L708.6,428.2L711.3,428.5L714.9,426.8L717.2,426.3L718.9,425L720.8,425.2L723.4,424.6L726.5,423.4L729.5,420.7L731.4,417.7L733.9,415.6L733.5,415.2L733.7,412.1L736.5,409.5L737.8,407.9L738.1,409.9L739.3,413.1L739.9,410.6L740.7,409.9L739.8,408.1L741.1,406.7L741.4,407.6L743.9,407.4L744.6,406.3L744.1,404.6L744.5,403.3L747.5,401.1L748.5,401.5L748.1,399.6L749.9,398.4L751.1,399.1L752.7,396.1L754.2,396.9L755.9,394.9L758.7,397.1L760.5,399.7L760.2,401.1L761.6,399.9L764.8,400.3L766.1,401.6L766.3,400.2L767.2,400.1L765.6,398L767.2,396L768,394.1L770,392.8L769.8,391.1L772,388.6L775,386.8L775.5,387.8L778.9,387.4L779.5,387.9L780.5,386.7L780.9,384.8L778.8,384.1L777.6,383L779.5,382.7L781.1,384.1L782.5,383.9L783,385.1L785.9,385.7L787.2,386.5L789.2,386.4L791.1,387.6L793.6,386.1L795.2,388.6L795.5,387.1L796.7,386.3L798.1,388.2L796.1,390.3L795.5,392.4L794.9,392L793.3,392.8L793.2,395.2L792.5,396.9L790,399.8L790.4,400.9L798.3,406.9L800,409.2L803,410.1L803.6,412.1L806.4,413.9L808.5,413.6L810,412.6L812.3,408.9L813.6,406.1L814.1,403.9L815.3,401.2L815.4,398.4L815.9,396.9L815.7,395.2L816.8,392.6L816.9,391L818.3,390.4L817.6,388.2L819,386L820.5,381.5L821.8,380.3L823,383.2L822.8,385.7ZM772.6,383.5L775.4,382.6L776.4,383.8L773.7,386.2L772.1,384.7L771.7,382.7ZM769.8,501L771.5,501.1L768.6,502.6L766,502.4L766.1,501L769.1,500.3ZM787.1,525.2L788.1,525.1L791,527L794,526.2L795.8,526.3L798.3,525.2L799.1,526L796.3,531.2L796.2,530.9L793.5,533.8L792.1,536.5L791.2,536.8L791.4,535L790.3,535.4L786.7,538.7L785.8,538.2L783.8,538.4L784,537.6L783.3,535.4L784,532.1L784.9,532.7L784.5,529.3L785.1,526.2L786.2,524.7Z"/></g>
-        </g>
-        <g id="jarcs"></g>
-        <g id="jmarks"></g>
-      </svg>
-      <div class="legend" id="legend" aria-label="Legend"></div>
-      <div class="tl" id="tl"><div class="tl-track" id="tlTrack"></div><div class="tl-axis" id="tlAxis"></div></div>
-      <div class="zoom" id="zoomCtl">
-        <button type="button" data-z="in" aria-label="Zoom in">+</button>
-        <button type="button" data-z="out" aria-label="Zoom out">−</button>
-        <button type="button" data-z="reset" aria-label="Back to chapter view" title="Back to chapter view"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M4 4l6 6M20 20l-6-6"/></svg></button>
-      </div>
-      <div class="hud"><div class="now" id="hudNow"><b>00</b>Overview</div><div class="ticks" id="ticks"></div></div>
-    </div>
-    <div class="steps" id="steps"></div>
-  </div>
-</section>
-</main>
-
-<footer><div class="wrap"><span>© <span id="yr"></span> Zhanxiong Song · 宋展雄</span><span>Vienna · Last updated October 2026</span></div></footer>
-
-<script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
